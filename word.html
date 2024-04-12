@@ -31,11 +31,11 @@
     
     &lt;div class="row"&gt;
     &lt;div class="col-md-6"&gt;
-    &lt;div class="logo-tool"&gt;&lt;img alt="data science course in <span class="nameSpan"></span> - 360digitmg" class="lazy" data-src="https://360digit.b-cdn.net/assets/admin/ckfinder/userfiles/images/blog/Ds-Bangalore-Tools/Ds-tools-01.png" src="https://360digit.b-cdn.net/assets/admin/ckfinder/userfiles/images/blog/Ds-Bangalore-Tools/Ds-tools-01.png"/&gt;&lt;/div&gt;
+    &lt;div class="logo-tool"&gt;&lt;img alt="data science course in <span class="nameSpan small"></span> - 360digitmg" class="lazy" data-src="https://360digit.b-cdn.net/assets/admin/ckfinder/userfiles/images/blog/Ds-Bangalore-Tools/Ds-tools-01.png" src="https://360digit.b-cdn.net/assets/admin/ckfinder/userfiles/images/blog/Ds-Bangalore-Tools/Ds-tools-01.png" style="width: 544px; height: 174px;" /&gt;&lt;/div&gt;
     &lt;/div&gt;
     
     &lt;div class="col-md-6"&gt;
-    &lt;div class="logo-tool"&gt;&lt;img alt="data science course in <span class="nameSpan"></span> - 360digitmg" class="lazy" data-src="https://360digit.b-cdn.net/assets/admin/ckfinder/userfiles/images/blog/Ds-Bangalore-Tools/Ds-tools-02.png" src="https://360digit.b-cdn.net/assets/admin/ckfinder/userfiles/images/blog/Ds-Bangalore-Tools/Ds-tools-02.png"/&gt;&lt;/div&gt;
+    &lt;div class="logo-tool"&gt;&lt;img alt="data science course in <span class="nameSpan small"></span> - 360digitmg" class="lazy" data-src="https://360digit.b-cdn.net/assets/admin/ckfinder/userfiles/images/blog/Ds-Bangalore-Tools/Ds-tools-02.png" src="https://360digit.b-cdn.net/assets/admin/ckfinder/userfiles/images/blog/Ds-Bangalore-Tools/Ds-tools-02.png" style="width: 544px; height: 174px;" /&gt;&lt;/div&gt;
     &lt;/div&gt;
     &lt;/div&gt;
 </pre>
@@ -43,32 +43,43 @@
 
 <input type="text" id="nameInput">
 <button id="copyButton">Copy</button>
-
+<h1 class="result"></h1>
 <script>
-document.addEventListener("DOMContentLoaded", function() {
-  var nameInput = document.getElementById("nameInput");
-  var nameSpans = document.querySelectorAll(".nameSpan");
-  var copyButton = document.getElementById("copyButton");
-  
-  copyButton.addEventListener("click", function() {
-    var copyText = document.querySelector('.copy');
-    var range = document.createRange();
-    range.selectNode(copyText);
-    window.getSelection().removeAllRanges(); // Clear previous selections
-    window.getSelection().addRange(range);
-    document.execCommand("copy");
-    window.getSelection().removeAllRanges(); // Clear the selection after copying
-    // alert("Copied the text: " + copyText.textContent);
-  });
-
-  nameInput.addEventListener("input", function() {
-    var inputValue = nameInput.value;
-    nameSpans.forEach(function(span) {
-      span.textContent = inputValue;
+    document.addEventListener("DOMContentLoaded", function() {
+      var nameInput = document.getElementById("nameInput");
+      var nameSpans = document.querySelectorAll(".nameSpan");
+      var copyButton = document.getElementById("copyButton");
+      var resultElement = document.querySelector(".result");
+    
+      function copyText() {
+        var copyText = document.querySelector('.copy');
+        var range = document.createRange();
+        range.selectNode(copyText);
+        window.getSelection().removeAllRanges(); // Clear previous selections
+        window.getSelection().addRange(range);
+        document.execCommand("copy");
+        window.getSelection().removeAllRanges(); // Clear the selection after copying
+        resultElement.textContent = "Copied '" + nameInput.value + "'";
+      }
+    
+      copyButton.addEventListener("click", copyText);
+    
+      nameInput.addEventListener("input", function() {
+        var inputValue = nameInput.value;
+        nameSpans.forEach(function(span) {
+          span.textContent = inputValue;
+        });
+      });
+    
+      nameInput.addEventListener("keydown", function(event) {
+        if (event.key === "Enter") {
+          copyText();
+        }
+      });
     });
-  });
-});
-</script>
+    </script>
+    
+    
 
 </body>
 </html>

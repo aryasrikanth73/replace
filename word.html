@@ -58,7 +58,7 @@ document.addEventListener("DOMContentLoaded", function() {
     window.getSelection().addRange(range);
     document.execCommand("copy");
     window.getSelection().removeAllRanges(); // Clear the selection after copying
-    alert("Copied the text: " + copyText.textContent);
+    // alert("Copied the text: " + copyText.textContent);
   });
 
   nameInput.addEventListener("input", function() {

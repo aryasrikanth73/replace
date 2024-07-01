@@ -5,81 +5,1525 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Replace Word Dynamically</title>
 <style>
-.nameSpan{
-color:red;
-}
+    .nameSpan {
+        color: red;
+    }
+    .copyButton {
+        display: inline-block;
+        padding: 10px 20px;
+        background-color: #4CAF50;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 16px;
+    }
+    .copyButton:hover {
+        background-color: #45a049;
+    }
+    .result {
+        color: green;
+        font-size: 18px;
+        margin-top: 10px;
+    }
+    .box{
+        border: #2b2b2e 1px solid;
+        margin-left: 10px;
+    }
 </style>
 </head>
 <body>
 <div class="copy">
-<pre>
-  &lt;style type="text/css">.tool-txt{color:#fff; padding-bottom:40px}
-	.logo-lst p.tool-txt {
-	  padding-bottom: 40px;
-	}
-	.logo-tool{
-		padding-right: 20px;
-		padding-left: 20px;
-	}
-	span{
-	font-weight:600;
-	}
-&lt;/style>
-&lt;div class="row">
-&lt;div class="col-md-12">
-&lt;p class="tool-txt">The Data Science course is vast and consists of many interesting concepts like Big Data, Machine Learning, Data Warehousing, Data Mining and Visualization, Forecasting, 
-	Cloud Computing, Deep Learning, Neural Networks, and Business Intelligence. The &lt;span>Data Science Training in <span class="nameSpan small"></span>&lt;/span> uses various tools for this process.&lt;/p>
-&lt;/div>
-&lt;/div>
-
-&lt;div class="row">
-&lt;div class="col-md-6">
-&lt;div class="logo-tool">&lt;img alt="data science course in <span class="nameSpan"></span> - 360digitmg" class="lazy" data-src="https://360digit.b-cdn.net/assets/admin/ckfinder/userfiles/images/blog/Ds-Bangalore-Tools/Ds-tools-01.png" src="https://360digit.b-cdn.net/assets/admin/ckfinder/userfiles/images/blog/Ds-Bangalore-Tools/Ds-tools-01.png" />&lt;/div>
-&lt;/div>
-
-&lt;div class="col-md-6">
-&lt;div class="logo-tool">&lt;img alt="data science course in <span class="nameSpan"></span> - 360digitmg" class="lazy" data-src="https://360digit.b-cdn.net/assets/admin/ckfinder/userfiles/images/blog/Ds-Bangalore-Tools/Ds-tools-02.png" src="https://360digit.b-cdn.net/assets/admin/ckfinder/userfiles/images/blog/Ds-Bangalore-Tools/Ds-tools-02.png" />&lt;/div>
-&lt;/div>
-&lt;/div>
-</pre>
+    <input type="text" id="nameInput" placeholder="Enter location">
 </div>
+<div class="box">
+<div class="section-1">
+    <pre>
+        &lt;div style="margin-bottom:10px;font-family: 'Rubik', sans-serif;">Fast-track your career with the Certificate Course in Data Science Training in <span class="nameSpan"></span>.&lt;/div>
 
-<input type="text" id="nameInput">
-<button id="copyButton">Copy</button>
-<h1 class="result"></h1>
+        &lt;ul class="list-points">
+            &lt;li class="list">Accredited by The State University of New York (SUNY)&lt;/li>
+            &lt;li class="list">184 Hours of Intensive Classroom &amp; Online Sessions&lt;/li>
+            &lt;li class="list">2 Capstone Live Projects&lt;/li>
+            &lt;li class="list">Job Placement Assistance&lt;/li>
+        &lt;/ul>
+
+        &lt;div class="mobile-make-enq">&lt;a class="course-makebtn">Enquire Now&lt;/a>&lt;/div>
+
+        &lt;div class="rt-sc">
+            &lt;div class="bnr-rating">&lt;img alt="data science course reviews in <span class="nameSpan"></span> - 360digitmg" src="https://360digit.b-cdn.net/assets/img/rating.png" />
+            &lt;h6 class="rt-cnt">411 Reviews&lt;/h6>
+            &lt;/div>
+
+            &lt;div class="lerns">&lt;img alt="data science learners in <span class="nameSpan"></span> - 360digitmg" src="https://360digit.b-cdn.net/assets/img/learner-icon.png" />
+            &lt;h6 class="rt-cnt">12561 Learners&lt;/h6>
+            &lt;/div>
+        &lt;/div>
+    </pre>
+    <button class="copyButton" onclick="copyText('section-1')">Copy</button>
+    <h1 class="result"></h1>
+</div></div> <br><br>
+<div class="box">
+<div class="section-2">
+    <pre>
+        &lt;ul>
+            &lt;li>&lt;img alt="Data Science course career in <span class="nameSpan"></span>" src="https://360digit.b-cdn.net/assets/admin/ckfinder/userfiles/images/12-01-2024/aispry.png" style="height: 75px; width: 150px;" />&lt;/li>
+            &lt;li>&lt;a href="https://www.ibm.com/in-en/marketing/careereducation/authorized_ibm_partners.html" rel="nofollow" target="_blank">&lt;img alt="Data Science course with nasscom in <span class="nameSpan"></span>" src="https://360digit.b-cdn.net/assets/img/nasscomm.png" />&lt;/a>&lt;/li>
+            &lt;li>&lt;img alt="Data Science course with microsoft certificate in <span class="nameSpan"></span>" src="https://360digit.b-cdn.net/assets/admin/ckfinder/userfiles/images/logo-04-10-2023/microsoft.png" />&lt;/li>
+            &lt;li>&lt;img alt="Certification Program in Data Science with SUNY in <span class="nameSpan"></span>" src="https://360digit.b-cdn.net/assets/admin/ckfinder/userfiles/images/blog/11-02-2023/Partner%20Logo-SUNY.png" />&lt;/li>
+            &lt;li>&lt;img alt="Certification Program in Data Science with NEF in <span class="nameSpan"></span>" src="https://360digit.b-cdn.net/assets/admin/ckfinder/userfiles/images/blog/11-02-2023/Partner%20Logo-NEF.png" />&lt;/li>
+        &lt;/ul>
+    </pre>
+    <button class="copyButton" onclick="copyText('section-2')">Copy</button>
+    <h1 class="result"></h1>
+</div></div> <br><br>
+<div class="box">
+<div class="section-4">
+    <pre>
+        &lt;style type="text/css">.panel-collapse h3{font-weight:600; padding:10px 0}
+        .frame{display: flex;
+                align-items: center;
+              }
+            .item-title{font-size:24px;
+                font-weight:400;
+                color:#FA7D01;
+            padding:20px 0;
+            }
+                    
+                 .item-title span{
+                font-size:16px;
+                font-weight:400;
+                color:#519FD7;
+                }
+                h2{    padding-top: 22px;    padding-bottom: 7px;}
+            @media only screen and (max-width: 768px) {
+            .frame{display: block; text-align: center; }
+            }
+             .blink {
+                animation: blinker 1.5s linear infinite;
+                color: #ff0000;
+                background:#ffffff;
+                font-size:16px;
+                padding:1px 5px;
+                font-weight:600;
+                font-family: sans-serif;
+                border-radius:5px;
+            }
+            @keyframes blinker {
+                50% {
+                    opacity: 0;
+                }
+            }
+    &lt;/style>
+            &lt;p class="module-prah">This D&lt;strong>ata Science Program&lt;/strong> follows the CRISP-ML(Q)&nbsp;Methodology. The premier modules are devoted to a foundational perspective of Statistics, Mathematics, Business Intelligence, and Exploratory Data Analysis. The successive modules deal with Probability Distribution, Hypothesis Testing, Data Mining Supervised, Predictive Modelling - Multiple Linear Regression, Lasso And Ridge Regression, &lt;a href="https://360digitmg.com/blog/logistic-regression">Logistic Regression&lt;/a>, Multinomial Regression, and Ordinal Regression. Later modules deal with Data Mining Unsupervised Learning, Recommendation Engines, &lt;a href="https://360digitmg.com/blog/network-analytics">Network Analytics&lt;/a>, Machine Learning, Decision Tree and Random Forest, Text Mining, and Natural Language Processing. The final modules deal with Machine Learning - classifier techniques, Perceptron, Multilayer Perceptron, Neural Networks, Deep Learning Black-Box Techniques, SVM, Forecasting, and Time Series algorithms. This is the most enriching training program in terms of the array of topics covered.&lt;/p>
+    
+            &lt;div aria-multiselectable="true" class="panel-group mt-20" id="accordion1" role="tablist">
+            &lt;div class="panel panel-warning">
+            &lt;div class="panel-heading" id="heading1-module" role="tab">
+            &lt;h3 class="panel-title">&lt;a aria-controls="collapse1-mod" aria-expanded="true" class="collapsed colsp" data-parent="#accordion1" data-toggle="collapse" href="#collapse1-mod" role="button">1. Python Introduction&lt;/a>&lt;/h3>
+            &lt;/div>
+    
+            &lt;div aria-labelledby="heading1-module" class="panel-collapse collapse" id="collapse1-mod" role="tabpanel">
+            &lt;div class="panel-body">
+            &lt;ul style="list-style-type: disc; padding-left:20px;">
+                &lt;li>Introduction to Python Programming
+                &lt;ul style="list-style-type: square; padding-left:20px;">
+                &lt;/ul>
+                &lt;/li>
+                &lt;li>Installation of Python &amp; Associated Packages&lt;/li>
+                &lt;li>Graphical User Interface&lt;/li>
+                &lt;li>Installation of Anaconda Python&lt;/li>
+                &lt;li>Setting Up Python Environment&lt;/li>
+                &lt;li>Data Types&lt;/li>
+                &lt;li>Operators in Python&lt;/li>
+                &lt;li>Arithmetic operators&lt;/li>
+                &lt;li>Relational operators&lt;/li>
+                &lt;li>Logical operators&lt;/li>
+                &lt;li>Assignment operators&lt;/li>
+                &lt;li>Bitwise operators&lt;/li>
+                &lt;li>Membership operators&lt;/li>
+                &lt;li>Identity operators&lt;/li>
+                &lt;li>Check out the &lt;a href="https://360digitmg.com/blog/python-programming-interview-questions-answers">Top Python Programming Interview Questions and Answers&lt;/a> here.&lt;/li>
+            &lt;/ul>
+    
+            &lt;ul>
+                &lt;li>Data structures
+                &lt;ul style="list-style-type: square; padding-left:20px;">
+                    &lt;li>Vectors&lt;/li>
+                    &lt;li>Matrix&lt;/li>
+                    &lt;li>Arrays&lt;/li>
+                    &lt;li>Lists&lt;/li>
+                    &lt;li>Tuple&lt;/li>
+                    &lt;li>Sets&lt;/li>
+                    &lt;li>String Representation&lt;/li>
+                    &lt;li>Arithmetic Operators&lt;/li>
+                    &lt;li>Boolean Values&lt;/li>
+                    &lt;li>Dictionary&lt;/li>
+                &lt;/ul>
+                &lt;/li>
+                &lt;li>Conditional Statements
+                &lt;ul style="list-style-type: square; padding-left:20px;">
+                    &lt;li>if statement&lt;/li>
+                    &lt;li>if - else statement&lt;/li>
+                    &lt;li>if - elif statement&lt;/li>
+                    &lt;li>Nest if-else&lt;/li>
+                    &lt;li>Multiple if&lt;/li>
+                    &lt;li>Switch&lt;/li>
+                &lt;/ul>
+                &lt;/li>
+                &lt;li>Loops
+                &lt;ul style="list-style-type: square; padding-left:20px;">
+                    &lt;li>While loop&lt;/li>
+                    &lt;li>For loop&lt;/li>
+                    &lt;li>Range()&lt;/li>
+                    &lt;li>Iterator and generator Introduction&lt;/li>
+                    &lt;li>For &ndash; else&lt;/li>
+                    &lt;li>Break&lt;/li>
+                &lt;/ul>
+                &lt;/li>
+                &lt;li>Functions
+                &lt;ul style="list-style-type: square; padding-left:20px;">
+                    &lt;li>Purpose of a function&lt;/li>
+                    &lt;li>Defining a function&lt;/li>
+                    &lt;li>Calling a function&lt;/li>
+                    &lt;li>Function parameter passing&lt;/li>
+                    &lt;li>Formal arguments&lt;/li>
+                    &lt;li>Actual arguments&lt;/li>
+                    &lt;li>Positional arguments&lt;/li>
+                    &lt;li>Keyword arguments&lt;/li>
+                    &lt;li>Variable arguments&lt;/li>
+                    &lt;li>Variable keyword arguments&lt;/li>
+                    &lt;li>Use-Case *args, **kwargs&lt;/li>
+                &lt;/ul>
+                &lt;/li>
+                &lt;li>Function call stack
+                &lt;ul style="list-style-type: square; padding-left:20px;">
+                    &lt;li>Locals()&lt;/li>
+                    &lt;li>Globals()&lt;/li>
+                &lt;/ul>
+                &lt;/li>
+                &lt;li>Stackframe&lt;/li>
+                &lt;li>Modules
+                &lt;ul style="list-style-type: square; padding-left:20px;">
+                    &lt;li>Python Code Files&lt;/li>
+                    &lt;li>Importing functions from another file&lt;/li>
+                    &lt;li>__name__: Preventing unwanted code execution&lt;/li>
+                    &lt;li>Importing from a folder&lt;/li>
+                    &lt;li>Folders Vs Packages&lt;/li>
+                    &lt;li>__init__.py&lt;/li>
+                    &lt;li>Namespace&lt;/li>
+                    &lt;li>__all__&lt;/li>
+                    &lt;li>Import *&lt;/li>
+                    &lt;li>Recursive imports&lt;/li>
+                &lt;/ul>
+                &lt;/li>
+                &lt;li>File Handling&lt;/li>
+                &lt;li>Exception Handling&lt;/li>
+                &lt;li>Regular expressions&lt;/li>
+                &lt;li>Oops concepts&lt;/li>
+                &lt;li>Classes and Objects&lt;/li>
+                &lt;li>Inheritance and Polymorphism&lt;/li>
+                &lt;li>Multi-Threading&lt;/li>
+            &lt;/ul>
+            &lt;/div>
+            &lt;/div>
+            &lt;/div>
+    
+            &lt;div class="panel panel-warning">
+            &lt;div class="panel-heading" id="heading2-module" role="tab">
+            &lt;h3 class="panel-title">&lt;a aria-controls="collapse2-mod" aria-expanded="true" class="collapsed colsp" data-parent="#accordion1" data-toggle="collapse" href="#collapse2-mod" role="button">2. SQL&lt;/a>&lt;/h3>
+            &lt;/div>
+    
+            &lt;div aria-labelledby="heading2-module" class="panel-collapse collapse" id="collapse2-mod" role="tabpanel">
+            &lt;div class="panel-body">
+            &lt;ul style="list-style-type: disc; padding-left:20px;">
+                &lt;li>What is a Database&lt;/li>
+                &lt;li>Types of Databases&lt;/li>
+                &lt;li>DBMS vs RDBMS&lt;/li>
+                &lt;li>DBMS Architecture&lt;/li>
+                &lt;li>Normalisation &amp; Denormalization&lt;/li>
+                &lt;li>Install PostgreSQL&lt;/li>
+                &lt;li>Install MySQL&lt;/li>
+                &lt;li>Data Models&lt;/li>
+                &lt;li>DBMS Language&lt;/li>
+                &lt;li>ACID Properties in DBMS&lt;/li>
+                &lt;li>What is SQL&lt;/li>
+                &lt;li>SQL Data Types&lt;/li>
+                &lt;li>SQL commands&lt;/li>
+                &lt;li>SQL Operators&lt;/li>
+                &lt;li>SQL Keys&lt;/li>
+                &lt;li>SQL Joins&lt;/li>
+                &lt;li>GROUP BY, HAVING, ORDER BY&lt;/li>
+                &lt;li>Subqueries with select, insert, update, delete statements&lt;/li>
+                &lt;li>Views in SQL&lt;/li>
+                &lt;li>SQL Set Operations and Types&lt;/li>
+                &lt;li>SQL functions&lt;/li>
+                &lt;li>SQL Triggers&lt;/li>
+                &lt;li>Introduction to NoSQL Concepts&lt;/li>
+                &lt;li>SQL vs NoSQL&lt;/li>
+                &lt;li>Database connection SQL to Python&lt;/li>
+                &lt;li>Check out the &lt;a href="https://360digitmg.com/blog/sql-for-data-science-one-step-solution-for-beginners">SQL for Data Science One Step Solution for Beginners&lt;/a> here.&lt;/li>
+            &lt;/ul>
+            &lt;/div>
+            &lt;/div>
+            &lt;/div>
+    
+            &lt;div class="panel panel-warning">
+            &lt;div class="panel-heading" id="heading3DSHd-module" role="tab">
+            &lt;h3 class="panel-title">&lt;a aria-controls="collapse3DSHd-mod" aria-expanded="false" class="collapsed colsp colsp-content" data-parent="#accordion1" data-toggle="collapse" href="#collapse3DSHd-mod" role="button">3. Data Science - Preliminaries&lt;/a>&lt;/h3>
+            &lt;/div>
+            &lt;/div>
+    
+            &lt;div class="panel panel-warning">
+            &lt;div class="panel-heading" id="heading3DS-module" role="tab">
+            &lt;h3 class="panel-title">&lt;a aria-controls="collapse3DS-mod" aria-expanded="false" class="collapsed colsp" data-parent="#accordion1" data-toggle="collapse" href="#collapse3DS-mod" role="button">3a. CRISP-ML(Q) - Business &amp; Data Understanding&lt;/a>&lt;/h3>
+            &lt;/div>
+    
+            &lt;div aria-labelledby="heading3DS-module" class="panel-collapse collapse" id="collapse3DS-mod" role="tabpanel">
+            &lt;div class="panel-body">
+            &lt;p>Learn about insights on how data is assisting organizations to make informed data-driven decisions. Gathering the details about the problem statement would be the first step of the project. Learn the know-how of the Business understanding stage. Deep dive into the finer aspects of the management methodology to learn about objectives, constraints, success criteria, and the project charter. The essential task of understanding business Data and its characteristics is to help you plan for the upcoming stages of development. Check out the &lt;a href="https://360digitmg.com/blog/crisp-business-understanding">CRISP - Business Understanding&lt;/a> here.&lt;/p>
+    
+            &lt;ul style="list-style-type: disc; padding-left:20px;">
+                &lt;li>All About 360DigiTMG &amp; Innodatatics Inc., USA&lt;/li>
+                &lt;li>Dos and Don&#39;ts as a participant&lt;/li>
+                &lt;li>Introduction to Big Data Analytics&lt;/li>
+                &lt;li>Data and its uses &ndash; a case study (Grocery store)&lt;/li>
+                &lt;li>Interactive marketing using data &amp; IoT &ndash; A case study&lt;/li>
+                &lt;li>Course outline, road map, and takeaways from the course&lt;/li>
+                &lt;li>Stages of Analytics - Descriptive, Predictive, Prescriptive, etc.&lt;/li>
+                &lt;li>Cross-Industry Standard Process for Data Mining&lt;/li>
+            &lt;/ul>
+            &lt;/div>
+            &lt;/div>
+            &lt;/div>
+    
+            &lt;div class="panel panel-warning">
+            &lt;div class="panel-heading" id="heading4DS-module" role="tab">
+            &lt;h3 class="panel-title">&lt;a aria-controls="collapse4DS-mod" aria-expanded="false" class="collapsed colsp" data-parent="#accordion1" data-toggle="collapse" href="#collapse4DS-mod" role="button">3b. Data Preprocessing&lt;/a>&lt;/h3>
+            &lt;/div>
+    
+            &lt;div aria-labelledby="heading4DS-module" class="panel-collapse collapse" id="collapse4DS-mod" role="tabpanel">
+            &lt;div class="panel-body">
+            &lt;ul style="list-style-type: disc; padding-left:20px;">
+                &lt;li>Typecasting&lt;/li>
+                &lt;li>Handling Duplicates&lt;/li>
+                &lt;li>Outlier Analysis/Treatment
+                &lt;ul style="list-style-type: square; padding-left:20px;">
+                    &lt;li>Winsorization&lt;/li>
+                    &lt;li>Trimming&lt;/li>
+                    &lt;li>Local Outlier Factor&lt;/li>
+                    &lt;li>Isolation Forests&lt;/li>
+                &lt;/ul>
+                &lt;/li>
+                &lt;li>Zero or Near Zero Variance Features&lt;/li>
+                &lt;li>Missing Values
+                &lt;ul style="list-style-type: square; padding-left:20px;">
+                    &lt;li>Imputation (Mean, Median, Mode, Hot Deck)&lt;/li>
+                    &lt;li>Time Series Imputation Techniques
+                    &lt;ul style="list-style-type: circle; padding-left:20px;">
+                        &lt;li>Last Observation Carried Forward (LOCF)&lt;/li>
+                        &lt;li>Next Observation Carried Backward (NOCB)&lt;/li>
+                        &lt;li>Rolling Statistics&lt;/li>
+                        &lt;li>Interpolation&lt;/li>
+                    &lt;/ul>
+                    &lt;/li>
+                &lt;/ul>
+                &lt;/li>
+                &lt;li>Discretization / Binning / Grouping&lt;/li>
+                &lt;li>Encoding: Dummy Variable Creation&lt;/li>
+                &lt;li>Transformation
+                &lt;ul style="list-style-type: square; padding-left:20px;">
+                    &lt;li>Transformation - Box-Cox, Yeo-Johnson&lt;/li>
+                &lt;/ul>
+                &lt;/li>
+                &lt;li>Scaling: Standardization / Normalization&lt;/li>
+                &lt;li>Imbalanced Handling
+                &lt;ul style="list-style-type: square; padding-left:20px;">
+                    &lt;li>SMOTE&lt;/li>
+                    &lt;li>MSMOTE&lt;/li>
+                    &lt;li>Undersampling&lt;/li>
+                    &lt;li>Oversampling&lt;/li>
+                &lt;/ul>
+                &lt;/li>
+            &lt;/ul>
+            &lt;/div>
+            &lt;/div>
+            &lt;/div>
+    
+            &lt;div class="panel panel-warning">
+            &lt;div class="panel-heading" id="heading5DS-module" role="tab">
+            &lt;h3 class="panel-title">&lt;a aria-controls="collapse5DS-mod" aria-expanded="false" class="collapsed colsp" data-parent="#accordion1" data-toggle="collapse" href="#collapse5DS-mod" role="button">3c. Exploratory Data Analytics (EDA)&lt;/a>&lt;/h3>
+            &lt;/div>
+    
+            &lt;div aria-labelledby="heading5DS-module" class="panel-collapse collapse" id="collapse5DS-mod" role="tabpanel">
+            &lt;div class="panel-body">
+            &lt;p>In this module, you will learn about dealing with the Data after the Collection. Learn to extract meaningful information about Data by performing Uni-variate analysis which is the preliminary step to churn the data. The task is also called Descriptive Analytics or also known as exploratory data analysis. In this module, you also are introduced to statistical calculations which are used to derive information along with Visualizations to show the information in graphs/plots&lt;/p>
+    
+            &lt;ul style="list-style-type: disc; padding-left:20px;">
+                &lt;li>Machine Learning project management methodology&lt;/li>
+                &lt;li>Data Collection - Surveys and Design of Experiments&lt;/li>
+                &lt;li>Data Types namely Continuous, Discrete, Categorical, Count, Qualitative, Quantitative and its identification and application&lt;/li>
+                &lt;li>Further classification of data in terms of Nominal, Ordinal, Interval &amp; Ratio types&lt;/li>
+                &lt;li>Balanced versus Imbalanced datasets&lt;/li>
+                &lt;li>Cross Sectional versus Time Series vs Panel / Longitudinal Data
+                &lt;ul style="list-style-type: disc; padding-left:20px;">
+                    &lt;li>Time Series - Resampling&lt;/li>
+                &lt;/ul>
+                &lt;/li>
+                &lt;li>Batch Processing vs Real Time Processing&lt;/li>
+                &lt;li>Structured versus Unstructured vs Semi-Structured Data&lt;/li>
+                &lt;li>Big vs Not-Big Data&lt;/li>
+                &lt;li>Data Cleaning / Preparation - Outlier Analysis, Missing Values Imputation Techniques, Transformations, Normalization / Standardization, Discretization&lt;/li>
+                &lt;li>Sampling techniques for handling Balanced vs. Imbalanced Datasets&lt;/li>
+                &lt;li>What is the Sampling Funnel and its application and its components?
+                &lt;ul style="list-style-type: square; padding-left:20px;">
+                    &lt;li>Population&lt;/li>
+                    &lt;li>Sampling frame&lt;/li>
+                    &lt;li>Simple random sampling&lt;/li>
+                    &lt;li>Sample&lt;/li>
+                &lt;/ul>
+                &lt;/li>
+                &lt;li>Measures of Central Tendency &amp; Dispersion
+                &lt;ul style="list-style-type: square; padding-left:20px;">
+                    &lt;li>Population&lt;/li>
+                    &lt;li>Mean/Average, Median, Mode&lt;/li>
+                    &lt;li>Variance, Standard Deviation, Range&lt;/li>
+                &lt;/ul>
+                &lt;/li>
+            &lt;/ul>
+            &lt;/div>
+            &lt;/div>
+            &lt;/div>
+    
+            &lt;div class="panel panel-warning">
+            &lt;div class="panel-heading" id="heading6DS-module" role="tab">
+            &lt;h3 class="panel-title">&lt;a aria-controls="collapse6DS-mod" aria-expanded="false" class="collapsed colsp" data-parent="#accordion1" data-toggle="collapse" href="#collapse6DS-mod" role="button">3d. Feature Engineering&lt;/a>&lt;/h3>
+            &lt;/div>
+    
+            &lt;div aria-labelledby="heading6DS-module" class="panel-collapse collapse" id="collapse6DS-mod" role="tabpanel">
+            &lt;div class="panel-body">
+            &lt;p>The raw Data collected from different sources may have different formats, values, shapes, or characteristics. Cleansing, or &lt;a href="https://360digitmg.com/blog/crisp-dm-data-cleansing-and-data-preparation">Data Preparation&lt;/a>, Data Munging, Data Wrapping, etc., are the next steps in the Data handling stage. The objective of this stage is to transform the Data into an easily consumable format for the next stages of development.&lt;/p>
+    
+            &lt;ul style="list-style-type: disc; padding-left:20px;">
+                &lt;li>Feature Engineering on Numeric / Non-numeric Data&lt;/li>
+                &lt;li>Feature Extraction&lt;/li>
+                &lt;li>Feature Selection
+                &lt;ul style="list-style-type: square; padding-left:20px;">
+                    &lt;li>Forward Feature Selection&lt;/li>
+                    &lt;li>Backward Feature Selection&lt;/li>
+                    &lt;li>Exhaustive Feature Selection&lt;/li>
+                    &lt;li>Recursive feature elimination (RFE)&lt;/li>
+                    &lt;li>Chi-square Test&lt;/li>
+                    &lt;li>Information Gain&lt;/li>
+                &lt;/ul>
+                &lt;/li>
+            &lt;/ul>
+            &lt;/div>
+            &lt;/div>
+            &lt;/div>
+    
+            &lt;div class="panel panel-warning">
+            &lt;div class="panel-heading" id="heading4-module" role="tab">
+            &lt;h3 class="panel-title">&lt;a aria-controls="collapse4-mod" aria-expanded="false" class="collapsed colsp" data-parent="#accordion1" data-toggle="collapse" href="#collapse4-mod" role="button">4. PowerBI&lt;/a>&lt;/h3>
+            &lt;/div>
+    
+            &lt;div aria-labelledby="heading4-module" class="panel-collapse collapse" id="collapse4-mod" role="tabpanel">
+            &lt;div class="panel-body">
+            &lt;ul style="list-style-type: disc; padding-left:20px;">
+                &lt;li>What is Power BI?
+                &lt;ul style="list-style-type: disc; padding-left:20px;">
+                    &lt;li>Power BI Tips and Tricks &amp; ChatGPT Prompts&lt;/li>
+                    &lt;!--&lt;li>&lt;a href="https://360digitmg.com/blog/introduction-to-power-bi">Introduction to Power BI&lt;/a>&lt;/li>-->
+                    &lt;li>Overview of Power BI&lt;/li>
+                    &lt;li>Architecture of PowerBI&lt;/li>
+                    &lt;li>PowerBI and Plans&lt;/li>
+                    &lt;li>Installation and introduction to PowerBI&lt;/li>
+                &lt;/ul>
+                &lt;/li>
+                &lt;li>Transforming Data using Power BI Desktop
+                &lt;ul style="list-style-type: disc; padding-left:20px;">
+                    &lt;li>Importing data&lt;/li>
+                    &lt;li>Changing Database&lt;/li>
+                    &lt;li>Data Types in PowerBI&lt;/li>
+                    &lt;li>Basic Transformations&lt;/li>
+                    &lt;li>Managing Query Groups&lt;/li>
+                    &lt;li>Splitting Columns&lt;/li>
+                    &lt;li>Changing Data Types&lt;/li>
+                    &lt;li>Working with Dates&lt;/li>
+                    &lt;li>Removing and Reordering Columns&lt;/li>
+                    &lt;li>Conditional Columns&lt;/li>
+                    &lt;li>Custom columns&lt;/li>
+                    &lt;li>Connecting to Files in a Folder&lt;/li>
+                    &lt;li>Merge Queries&lt;/li>
+                    &lt;li>Query Dependency View&lt;/li>
+                    &lt;li>Transforming Less Structured Data&lt;/li>
+                    &lt;li>Query Parameters&lt;/li>
+                    &lt;li>Column profiling&lt;/li>
+                    &lt;li>Query Performance Analytics&lt;/li>
+                    &lt;li>M-Language&lt;/li>
+                &lt;/ul>
+                &lt;/li>
+            &lt;/ul>
+            &lt;/div>
+            &lt;/div>
+            &lt;/div>
+    
+            &lt;div class="panel panel-warning">
+            &lt;div class="panel-heading" id="heading5DMUL-module" role="tab">
+            &lt;h3 class="panel-title">&lt;a aria-controls="collapse5DMUL-mod" aria-expanded="false" class="collapsed colsp colsp-content" data-parent="#accordion1" data-toggle="collapse" href="#collapse5DMUL-mod" role="button">5. Data Mining - Unsupervised Learning&lt;/a>&lt;/h3>
+            &lt;/div>
+            &lt;/div>
+    
+            &lt;div class="panel panel-warning">
+            &lt;div class="panel-heading" id="heading5DM1-module" role="tab">
+            &lt;h3 class="panel-title">&lt;a aria-controls="collapse5DM1-mod" aria-expanded="false" class="collapsed colsp" data-parent="#accordion1" data-toggle="collapse" href="#collapse5DM1-mod" role="button">5a. Mathematical Foundations&lt;/a>&lt;/h3>
+            &lt;/div>
+    
+            &lt;div aria-labelledby="heading5DM1-module" class="panel-collapse collapse" id="collapse5DM1-mod" role="tabpanel">
+            &lt;div class="panel-body">
+            &lt;p>Learn the preliminaries of the Mathematical / Statistical concepts which are the foundation of techniques used for churning the Data. You will revise the primary academic concepts of foundational mathematics and Linear Algebra basics. In this module, you will understand the importance of Data Optimization concepts in Machine Learning development. Check out the &lt;a href="https://360digitmg.com/blog/mathematical-foundations">Mathematical Foundations&lt;/a> here.&lt;/p>
+    
+            &lt;ul style="list-style-type: disc; padding-left:20px;">
+                &lt;li>Data Optimization&lt;/li>
+                &lt;li>Derivatives&lt;/li>
+                &lt;li>Linear Algebra&lt;/li>
+                &lt;li>Matrix Operations&lt;/li>
+            &lt;/ul>
+            &lt;/div>
+            &lt;/div>
+            &lt;/div>
+    
+            &lt;div class="panel panel-warning">
+            &lt;div class="panel-heading" id="heading5DM2-module" role="tab">
+            &lt;h3 class="panel-title">&lt;a aria-controls="collapse5DM2-mod" aria-expanded="false" class="collapsed colsp" data-parent="#accordion1" data-toggle="collapse" href="#collapse5DM2-mod" role="button">5b. Clustering / Segmentation&lt;/a>&lt;/h3>
+            &lt;/div>
+    
+            &lt;div aria-labelledby="heading5DM2-module" class="panel-collapse collapse" id="collapse5DM2-mod" role="tabpanel">
+            &lt;div class="panel-body">
+            &lt;p>Data mining unsupervised techniques are used as EDA techniques to derive insights from the business data. In this first module of unsupervised learning, get introduced to clustering algorithms. Learn about different approaches for data segregation to create homogeneous groups of data. In hierarchical clustering, K means clustering is the most used clustering algorithm. Understand the different mathematical approaches to perform data segregation. Also, learn about variations in K-means clustering like K-medoids, and K-mode techniques, and learn to handle large data sets using the CLARA technique.&lt;/p>
+    
+            &lt;ul style="list-style-type: disc; padding-left:20px;">
+                &lt;li>Clustering 101&lt;/li>
+                &lt;li>Distance Metrics&lt;/li>
+                &lt;li>&lt;a href="https://360digitmg.com/blog/hierarchical-clustering">Hierarchical Clustering&lt;/a>&lt;/li>
+                &lt;li>Non-Hierarchical Clustering&lt;/li>
+                &lt;li>DBSCAN&lt;/li>
+                &lt;li>Clustering Evaluation metrics&lt;/li>
+            &lt;/ul>
+            &lt;/div>
+            &lt;/div>
+            &lt;/div>
+    
+            &lt;div class="panel panel-warning">
+            &lt;div class="panel-heading" id="heading5DM3-module" role="tab">
+            &lt;h3 class="panel-title">&lt;a aria-controls="collapse5DM3-mod" aria-expanded="false" class="collapsed colsp" data-parent="#accordion1" data-toggle="collapse" href="#collapse5DM3-mod" role="button">5c. Dimension Reduction&lt;/a>&lt;/h3>
+            &lt;/div>
+    
+            &lt;div aria-labelledby="heading5DM3-module" class="panel-collapse collapse" id="collapse5DM3-mod" role="tabpanel">
+            &lt;div class="panel-body">
+            &lt;p>&lt;a href="https://360digitmg.com/blog/dimensionality-reduction-in-data-science">Dimension Reduction&lt;/a> (PCA and SVD) / Factor Analysis Description: Learn to handle high dimensional data. The performance will be hit when the data has a high number of dimensions and machine learning techniques training becomes very complex, as part of this module you will learn to apply data reduction techniques without any variable deletion. Learn the advantages of dimensional reduction techniques. Also, learn about yet another technique called Factor Analysis.&lt;/p>
+    
+            &lt;ul style="list-style-type: disc; padding-left:20px;">
+                &lt;li>Prinicipal Component Analysis (PCA)&lt;/li>
+                &lt;li>Singular Value Decomposition (SVD)&lt;/li>
+            &lt;/ul>
+            &lt;/div>
+            &lt;/div>
+            &lt;/div>
+    
+            &lt;div class="panel panel-warning">
+            &lt;div class="panel-heading" id="heading5DM4-module" role="tab">
+            &lt;h3 class="panel-title">&lt;a aria-controls="collapse5DM4-mod" aria-expanded="false" class="collapsed colsp" data-parent="#accordion1" data-toggle="collapse" href="#collapse5DM4-mod" role="button">5d. Association Rules&lt;/a>&lt;/h3>
+            &lt;/div>
+    
+            &lt;div aria-labelledby="heading5DM4-module" class="panel-collapse collapse" id="collapse5DM4-mod" role="tabpanel">
+            &lt;div class="panel-body">
+            &lt;p>Learn to measure the relationship between entities. Bundle offers are defined based on this measure of dependency between products. Understand the metrics Support, Confidence, and Lift used to define the rules with the help of the Apriori algorithm. Learn the pros and cons of each of the metrics used in &lt;a href="https://360digitmg.com/blog/association-rules">Association rules&lt;/a>.&lt;/p>
+    
+            &lt;ul style="list-style-type: disc; padding-left:20px;">
+                &lt;li>Association rules mining 101&lt;/li>
+                &lt;li>Measurement Metrics&lt;/li>
+                &lt;li>Support&lt;/li>
+                &lt;li>Confidence&lt;/li>
+                &lt;li>Lift&lt;/li>
+            &lt;/ul>
+            &lt;/div>
+            &lt;/div>
+            &lt;/div>
+    
+            &lt;div class="panel panel-warning">
+            &lt;div class="panel-heading" id="heading5DM5-module" role="tab">
+            &lt;h3 class="panel-title">&lt;a aria-controls="collapse5DM5-mod" aria-expanded="false" class="collapsed colsp" data-parent="#accordion1" data-toggle="collapse" href="#collapse5DM5-mod" role="button">5e. Recommender Systems&lt;/a>&lt;/h3>
+            &lt;/div>
+    
+            &lt;div aria-labelledby="heading5DM5-module" class="panel-collapse collapse" id="collapse5DM5-mod" role="tabpanel">
+            &lt;div class="panel-body">
+            &lt;ul style="list-style-type: disc; padding-left:20px;">
+                &lt;li>User Based Collaborative Filtering&lt;/li>
+                &lt;li>Similarity Metrics&lt;/li>
+                &lt;li>Item Based Collaborative Filtering&lt;/li>
+                &lt;li>Search Based Methods&lt;/li>
+                &lt;li>SVD Method&lt;/li>
+            &lt;/ul>
+            &lt;/div>
+            &lt;/div>
+            &lt;/div>
+    
+            &lt;div class="panel panel-warning">
+            &lt;div class="panel-heading" id="heading5DM6-module" role="tab">
+            &lt;h3 class="panel-title">&lt;a aria-controls="collapse5DM6-mod" aria-expanded="false" class="collapsed colsp" data-parent="#accordion1" data-toggle="collapse" href="#collapse5DM6-mod" role="button">5f. Network Analytics&lt;/a>&lt;/h3>
+            &lt;/div>
+    
+            &lt;div aria-labelledby="heading5DM6-module" class="panel-collapse collapse" id="collapse5DM6-mod" role="tabpanel">
+            &lt;div class="panel-body">
+            &lt;p>The study of a network with quantifiable values is known as network analytics. The vertex and edge are the nodes and connection of a network, learn about the statistics used to calculate the value of each node in the network. You will also learn about the google page ranking algorithm as part of this module.&lt;/p>
+    
+            &lt;ul style="list-style-type: disc; padding-left:20px;">
+                &lt;li>Entities of a Network&lt;/li>
+                &lt;li>Properties of the Components of a Network&lt;/li>
+                &lt;li>Measure the value of a Network&lt;/li>
+                &lt;li>Community Detection Algorithms&lt;/li>
+            &lt;/ul>
+            &lt;/div>
+            &lt;/div>
+            &lt;/div>
+    
+            &lt;div class="panel panel-warning">
+            &lt;div class="panel-heading" id="heading5DM7-module" role="tab">
+            &lt;h3 class="panel-title">&lt;a aria-controls="collapse5DM7-mod" aria-expanded="false" class="collapsed colsp" data-parent="#accordion1" data-toggle="collapse" href="#collapse5DM7-mod" role="button">5g. Text Mining and Natural Language Processing (NLP)&lt;/a>&lt;/h3>
+            &lt;/div>
+    
+            &lt;div aria-labelledby="heading5DM7-module" class="panel-collapse collapse" id="collapse5DM7-mod" role="tabpanel">
+            &lt;div class="panel-body">
+            &lt;p>Learn to analyse unstructured textual data to derive meaningful insights. Understand the language quirks to perform data cleansing, extract features using a bag of words and construct the key-value pair matrix called DTM. Learn to understand the sentiment of customers from their feedback to take appropriate actions. Advanced concepts of text mining will also be discussed which help to interpret the context of the raw text data. Topic models using LDA algorithm, emotion mining using lexicons are discussed as part of NLP module.&lt;/p>
+    
+            &lt;ul style="list-style-type: disc; padding-left:20px;">
+                &lt;li>Sources of data&lt;/li>
+                &lt;li>Bag of words&lt;/li>
+                &lt;li>Pre-processing, corpus Document Term Matrix (DTM) &amp; TDM&lt;/li>
+                &lt;li>Word Clouds&lt;/li>
+                &lt;li>Corpus-level word clouds&lt;/li>
+                &lt;li>Sentiment Analysis&lt;/li>
+                &lt;li>Positive Word clouds&lt;/li>
+                &lt;li>Negative word clouds&lt;/li>
+                &lt;li>Unigram, Bigram, Trigram&lt;/li>
+                &lt;li>Semantic network&lt;/li>
+                &lt;li>Extract, user reviews of the product/services from Amazon and tweets from Twitter&lt;/li>
+                &lt;li>Install Libraries from Shell&lt;/li>
+                &lt;li>Extraction and text analytics in Python&lt;/li>
+                &lt;li>LDA / Latent Dirichlet Allocation&lt;/li>
+                &lt;li>Topic Modelling&lt;/li>
+                &lt;li>Sentiment Extraction&lt;/li>
+                &lt;li>Lexicons &amp; Emotion Mining&lt;/li>
+                &lt;li>Check out the &lt;a href="https://360digitmg.com/blog/text-mining-interview-questions-and-answers">Text Mining Interview Questions and Answers&lt;/a> here.&lt;/li>
+            &lt;/ul>
+            &lt;/div>
+            &lt;/div>
+            &lt;/div>
+    
+            &lt;div class="panel panel-warning">
+            &lt;div class="panel-heading" id="heading6DMSL-module" role="tab">
+            &lt;h3 class="panel-title">&lt;a aria-controls="collapse6DMSL-mod" aria-expanded="false" class="collapsed colsp colsp-content" data-parent="#accordion1" data-toggle="collapse" href="#collapse6DMSL-mod" role="button">6. Data Mining - Supervised Learning&lt;/a>&lt;/h3>
+            &lt;/div>
+            &lt;/div>
+    
+            &lt;div class="panel panel-warning">
+            &lt;div class="panel-heading" id="heading6DM1-module" role="tab">
+            &lt;h3 class="panel-title">&lt;a aria-controls="collapse6DM1-mod" aria-expanded="false" class="collapsed colsp" data-parent="#accordion1" data-toggle="collapse" href="#collapse6DM1-mod" role="button">6a. Machine Learning&lt;/a>&lt;/h3>
+            &lt;/div>
+    
+            &lt;div aria-labelledby="heading6DM1-module" class="panel-collapse collapse" id="collapse6DM1-mod" role="tabpanel">
+            &lt;div class="panel-body">
+            &lt;ul style="list-style-type: disc; padding-left:20px;">
+                &lt;li>Machine Learning primer&lt;/li>
+                &lt;li>Difference between Regression and Classification&lt;/li>
+                &lt;li>Evaluation Strategies&lt;/li>
+                &lt;li>Hyper Parameters&lt;/li>
+                &lt;li>Metrics&lt;/li>
+                &lt;li>&lt;a href="https://360digitmg.com/blog/overfitting-and-underfitting">Overfitting and Underfitting&lt;/a>&lt;/li>
+            &lt;/ul>
+            &lt;/div>
+            &lt;/div>
+            &lt;/div>
+    
+            &lt;div class="panel panel-warning">
+            &lt;div class="panel-heading" id="heading6DM2-module" role="tab">
+            &lt;h3 class="panel-title">&lt;a aria-controls="collapse6DM2-mod" aria-expanded="false" class="collapsed colsp" data-parent="#accordion1" data-toggle="collapse" href="#collapse6DM2-mod" role="button">6b. Machine Learning Classifier Technique - Naive Bayes&lt;/a>&lt;/h3>
+            &lt;/div>
+    
+            &lt;div aria-labelledby="heading6DM2-module" class="panel-collapse collapse" id="collapse6DM2-mod" role="tabpanel">
+            &lt;div class="panel-body">
+            &lt;p>Revise Bayes theorem to develop a classification technique for Machine learning. In this tutorial, you will learn about joint probability and its applications. Learn how to predict whether an incoming email is spam or a ham email. Learn about Bayesian probability and its applications in solving complex business problems.&lt;/p>
+    
+            &lt;ul style="list-style-type: disc; padding-left:20px;">
+                &lt;li>Probability &ndash; Recap&lt;/li>
+                &lt;li>Bayes Rule&lt;/li>
+                &lt;li>Na&iuml;ve Bayes Classifier&lt;/li>
+                &lt;li>Text Classification using Naive Bayes&lt;/li>
+                &lt;li>Checking for Underfitting and Overfitting in Naive Bayes&lt;/li>
+                &lt;li>Generalization and Regulation Techniques to avoid overfitting in Naive Bayes&lt;/li>
+                &lt;li>Check out the &lt;a href="https://360digitmg.com/blog/naive-bayes-algorithm">Naive Bayes Algorithm&lt;/a> here.&lt;/li>
+            &lt;/ul>
+            &lt;/div>
+            &lt;/div>
+            &lt;/div>
+    
+            &lt;div class="panel panel-warning">
+            &lt;div class="panel-heading" id="heading6DM3-module" role="tab">
+            &lt;h3 class="panel-title">&lt;a aria-controls="collapse6DM3-mod" aria-expanded="false" class="collapsed colsp" data-parent="#accordion1" data-toggle="collapse" href="#collapse6DM3-mod" role="button">6c. Machine Learning - KNN Classifier&lt;/a>&lt;/h3>
+            &lt;/div>
+    
+            &lt;div aria-labelledby="heading6DM3-module" class="panel-collapse collapse" id="collapse6DM3-mod" role="tabpanel">
+            &lt;div class="panel-body">
+            &lt;p>k Nearest Neighbor algorithm is a distance-based machine learning algorithm. Learn to classify the dependent variable using the appropriate k value. The &lt;a href="https://360digitmg.com/blog/knn-classifier">KNN Classifier&lt;/a> also known as a lazy learner is a very popular algorithm and one of the easiest for application.&lt;/p>
+    
+            &lt;ul style="list-style-type: disc; padding-left:20px;">
+                &lt;li>Deciding the K value&lt;/li>
+                &lt;li>Thumb rule in choosing the K value.&lt;/li>
+                &lt;li>Building a KNN model by splitting the data&lt;/li>
+                &lt;li>Checking for Underfitting and Overfitting in KNN&lt;/li>
+                &lt;li>Generalization and Regulation Techniques to avoid overfitting in KNN&lt;/li>
+            &lt;/ul>
+            &lt;/div>
+            &lt;/div>
+            &lt;/div>
+    
+            &lt;div class="panel panel-warning">
+            &lt;div class="panel-heading" id="heading6DM4-module" role="tab">
+            &lt;h3 class="panel-title">&lt;a aria-controls="collapse6DM4-mod" aria-expanded="false" class="collapsed colsp" data-parent="#accordion1" data-toggle="collapse" href="#collapse6DM4-mod" role="button">6d. Confidence Interval&lt;/a>&lt;/h3>
+            &lt;/div>
+    
+            &lt;div aria-labelledby="heading6DM4-module" class="panel-collapse collapse" id="collapse6DM4-mod" role="tabpanel">
+            &lt;div class="panel-body">
+            &lt;p>In this tutorial, you will learn in detail about the continuous probability distribution. Understand the properties of a continuous random variable and its distribution under normal conditions. To identify the properties of a continuous random variable, statisticians have defined a variable as a standard, learning the properties of the standard variable and its distribution. You will learn to check if a continuous random variable is following normal distribution using a normal Q-Q plot. Learn the science behind the estimation of value for a population using sample data.&lt;/p>
+    
+            &lt;ul style="list-style-type: disc; padding-left:20px;">
+                &lt;li>Probability &amp; Probability Distribution&lt;/li>
+                &lt;li>Continuous Probability Distribution / Probability Density Function&lt;/li>
+                &lt;li>Discrete Probability Distribution / Probability Mass Function&lt;/li>
+                &lt;li>Normal Distribution&lt;/li>
+                &lt;li>Standard Normal Distribution / Z distribution&lt;/li>
+                &lt;li>Z scores and the &lt;a href="https://360digitmg.com/blog/z-table">Z table&lt;/a>&lt;/li>
+                &lt;li>QQ Plot / Quantile - Quantile plot&lt;/li>
+                &lt;li>Sampling Variation&lt;/li>
+                &lt;li>Central Limit Theorem&lt;/li>
+                &lt;li>Sample size calculator&lt;/li>
+                &lt;li>Confidence interval - concept&lt;/li>
+                &lt;li>Confidence interval with sigma&lt;/li>
+                &lt;li>T-distribution Table / Student&#39;s-t distribution / &lt;a href="https://360digitmg.com/blog/t-table">T table&lt;/a>&lt;/li>
+                &lt;li>Confidence interval&lt;/li>
+                &lt;li>Population parameter with Standard deviation known&lt;/li>
+                &lt;li>Population parameter with Standard deviation not known&lt;/li>
+            &lt;/ul>
+            &lt;/div>
+            &lt;/div>
+            &lt;/div>
+    
+            &lt;div class="panel panel-warning">
+            &lt;div class="panel-heading" id="heading6DM5-module" role="tab">
+            &lt;h3 class="panel-title">&lt;a aria-controls="collapse6DM5-mod" aria-expanded="false" class="collapsed colsp" data-parent="#accordion1" data-toggle="collapse" href="#collapse6DM5-mod" role="button">6e. Hypothesis Testing - The &lsquo;4&rsquo; Must Know Hypothesis Tests&lt;/a>&lt;/h3>
+            &lt;/div>
+    
+            &lt;div aria-labelledby="heading6DM5module" class="panel-collapse collapse" id="collapse6DM5-mod" role="tabpanel">
+            &lt;div class="panel-body">
+            &lt;p>Learn to frame business statements by making assumptions. Understand how to perform testing of these assumptions to make decisions for business problems. Learn about different types of Hypothesis testing and its statistics. You will learn the different conditions of the Hypothesis table, namely Null Hypothesis, Alternative hypothesis, Type I error, and Type II error. The prerequisites for conducting a Hypothesis test, and interpretation of the results will be discussed in this module.&lt;/p>
+    
+            &lt;ul style="list-style-type: disc; padding-left:20px;">
+                &lt;li>Formulating a Hypothesis&lt;/li>
+                &lt;li>Choosing Null and Alternative Hypotheses&lt;/li>
+                &lt;li>Type I or Alpha Error and Type II or Beta Error&lt;/li>
+                &lt;li>Confidence Level, Significance Level, Power of Test&lt;/li>
+                &lt;li>Comparative study of sample proportions using Hypothesis testing&lt;/li>
+                &lt;li>2 Sample t-test&lt;/li>
+                &lt;li>ANOVA&lt;/li>
+                &lt;li>2 Proportion test&lt;/li>
+                &lt;li>Chi-Square test&lt;/li>
+            &lt;/ul>
+            &lt;/div>
+            &lt;/div>
+            &lt;/div>
+    
+            &lt;div class="panel panel-warning">
+            &lt;div class="panel-heading" id="heading6DM6-module" role="tab">
+            &lt;h3 class="panel-title">&lt;a aria-controls="collapse6DM6-mod" aria-expanded="false" class="collapsed colsp" data-parent="#accordion1" data-toggle="collapse" href="#collapse6DM6-mod" role="button">6f. Supervised Learning &ndash; Regression Techniques&lt;/a>&lt;/h3>
+            &lt;/div>
+    
+            &lt;div aria-labelledby="heading6DM6-module" class="panel-collapse collapse" id="collapse6DM6-mod" role="tabpanel">
+            &lt;div class="panel-body">
+            &lt;p>Data Mining supervised learning is all about making predictions for an unknown dependent variable using mathematical equations explaining the relationship with independent variables. Revisit the school math with the equation of a straight line. Learn about the components of Linear Regression with the equation of the regression line. Get introduced to Linear Regression analysis with a use case for the prediction of a continuous dependent variable. Understand about ordinary least squares technique.&lt;/p>
+    
+            &lt;ul style="list-style-type: disc; padding-left:20px;">
+                &lt;li>Scatter diagram&lt;/li>
+                &lt;li>Correlation analysis&lt;/li>
+                &lt;li>Correlation coefficient&lt;/li>
+                &lt;li>Ordinary least squares&lt;/li>
+                &lt;li>Principles of regression&lt;/li>
+                &lt;li>Simple Linear Regression&lt;/li>
+                &lt;li>Exponential Regression, Logarithmic Regression, Quadratic or Polynomial Regression&lt;/li>
+                &lt;li>Confidence Interval versus Prediction Interval&lt;/li>
+                &lt;li>Heteroscedasticity / Equal Variance&lt;/li>
+                &lt;li>Check out the &lt;a href="https://360digitmg.com/blog/linear-regression-interview-questions-and-answers">Linear Regression Interview Questions and Answers&lt;/a> here.&lt;/li>
+            &lt;/ul>
+            &lt;/div>
+            &lt;/div>
+            &lt;/div>
+    
+            &lt;div class="panel panel-warning">
+            &lt;div class="panel-heading" id="heading6DM7-module" role="tab">
+            &lt;h3 class="panel-title">&lt;a aria-controls="collapse6DM7-mod" aria-expanded="false" class="collapsed colsp" data-parent="#accordion1" data-toggle="collapse" href="#collapse6DM7-mod" role="button">6g. Multiple Linear Regression - Predictive Modelling&lt;/a>&lt;/h3>
+            &lt;/div>
+    
+            &lt;div aria-labelledby="heading6DM7-module" class="panel-collapse collapse" id="collapse6DM7-mod" role="tabpanel">
+            &lt;div class="panel-body">
+            &lt;p>In the continuation of the Regression analysis study, you will learn how to deal with multiple independent variables affecting the dependent variable. Learn about the conditions and assumptions to perform linear regression analysis and the workarounds used to follow the conditions. Understand the steps required to perform the evaluation of the model and to improvise the prediction accuracies. You will be introduced to concepts of variance and bias.&lt;/p>
+    
+            &lt;ul style="list-style-type: disc; padding-left:20px;">
+                &lt;li>LINE assumption&lt;/li>
+                &lt;li>Linearity&lt;/li>
+                &lt;li>Independence&lt;/li>
+                &lt;li>Normality&lt;/li>
+                &lt;li>Equal Variance / Homoscedasticity&lt;/li>
+                &lt;li>Collinearity (Variance Inflation Factor)&lt;/li>
+                &lt;li>Multiple Linear Regression&lt;/li>
+                &lt;li>Model Quality metrics&lt;/li>
+                &lt;li>Deletion Diagnostics&lt;/li>
+                &lt;li>Check out the &lt;a href="https://360digitmg.com/blog/multiple-linear-regression-interview-questions-answers">Linear Regression Interview Questions&lt;/a> here.&lt;/li>
+            &lt;/ul>
+            &lt;/div>
+            &lt;/div>
+            &lt;/div>
+    
+            &lt;div class="panel panel-warning">
+            &lt;div class="panel-heading" id="heading6DM8-module" role="tab">
+            &lt;h3 class="panel-title">&lt;a aria-controls="collapse6DM8-mod" aria-expanded="false" class="collapsed colsp" data-parent="#accordion1" data-toggle="collapse" href="#collapse6DM8-mod" role="button">6h. Logistic Regression Binary Value Prediction, MLE&lt;/a>&lt;/h3>
+            &lt;/div>
+    
+            &lt;div aria-labelledby="heading6DM8-module" class="panel-collapse collapse" id="collapse6DM8-mod" role="tabpanel">
+            &lt;div class="panel-body">
+            &lt;p>You have learned about predicting a continuous dependent variable. As part of this module, you will continue to learn Regression techniques applied to predict attribute Data. Learn about the principles of the logistic regression model, understand the sigmoid curve, and the usage of cut-off value to interpret the probable outcome of the logistic regression model. Learn about the confusion matrix and its parameters to evaluate the outcome of the prediction model. Also, learn about maximum likelihood estimation.&lt;/p>
+    
+            &lt;ul style="list-style-type: disc; padding-left:20px;">
+                &lt;li>Principles of Logistic regression&lt;/li>
+                &lt;li>Types of Logistic regression&lt;/li>
+                &lt;li>Assumption &amp; Steps in Logistic regression&lt;/li>
+                &lt;li>Analysis of Simple logistic regression results&lt;/li>
+                &lt;li>Multiple Logistic regression&lt;/li>
+                &lt;li>Confusion matrix&lt;/li>
+                &lt;li>False Positive, False Negative&lt;/li>
+                &lt;li>True Positive, True Negative&lt;/li>
+                &lt;li>Sensitivity, Recall, Specificity, F1&lt;/li>
+                &lt;li>Receiver operating characteristics curve (ROC curve)&lt;/li>
+                &lt;li>Precision Recall (P-R) curve&lt;/li>
+                &lt;li>Lift charts and Gain charts&lt;/li>
+                &lt;li>Check out the &lt;a href="https://360digitmg.com/blog/logistic-regression-interview-questions-answers">Logistic Regression Interview Questions and Answers&lt;/a> here.&lt;/li>
+            &lt;/ul>
+            &lt;/div>
+            &lt;/div>
+            &lt;/div>
+    
+            &lt;div class="panel panel-warning">
+            &lt;div class="panel-heading" id="heading6DM9-module" role="tab">
+            &lt;h3 class="panel-title">&lt;a aria-controls="collapse6DM9-mod" aria-expanded="false" class="collapsed colsp" data-parent="#accordion1" data-toggle="collapse" href="#collapse6DM9-mod" role="button">6i. Lasso and Ridge Regressions&lt;/a>&lt;/h3>
+            &lt;/div>
+    
+            &lt;div aria-labelledby="heading6DM9-module" class="panel-collapse collapse" id="collapse6DM9-mod" role="tabpanel">
+            &lt;div class="panel-body">
+            &lt;p>Learn about overfitting and underfitting conditions for prediction models developed. We need to strike the right balance between overfitting and underfitting, learn about regularization techniques L1 norm and L2 norm used to reduce these abnormal conditions. The regression techniques of Lasso and Ridge techniques are discussed in this module.&lt;/p>
+    
+            &lt;ul style="list-style-type: disc; padding-left:20px;">
+                &lt;li>Understanding Overfitting (Variance) vs. Underfitting (Bias)&lt;/li>
+                &lt;li>Generalization error and Regularization techniques&lt;/li>
+                &lt;li>Different Error functions, Loss functions, or Cost functions&lt;/li>
+                &lt;li>Lasso Regression&lt;/li>
+                &lt;li>Ridge Regression&lt;/li>
+                &lt;li>Check out the &lt;a href="https://360digitmg.com/blog/lasso-and-ridge-regression-interview-questions-answers">Lasso and Ridge Regression Interview Questions and Answers &lt;/a> here.&lt;/li>
+            &lt;/ul>
+            &lt;/div>
+            &lt;/div>
+            &lt;/div>
+    
+            &lt;div class="panel panel-warning">
+            &lt;div class="panel-heading" id="heading6DM10-module" role="tab">
+            &lt;h3 class="panel-title">&lt;a aria-controls="collapse6DM10-mod" aria-expanded="false" class="collapsed colsp" data-parent="#accordion1" data-toggle="collapse" href="#collapse6DM10-mod" role="button">6j. Multinomial and Ordinal Logistic Regression&lt;/a>&lt;/h3>
+            &lt;/div>
+    
+            &lt;div aria-labelledby="heading6DM10-module" class="panel-collapse collapse" id="collapse6DM10-mod" role="tabpanel">
+            &lt;div class="panel-body">
+            &lt;p>Extension to logistic regression We have multinomial and Ordinal Logistic regression techniques used to predict multiple categorical outcomes. Understand the concept of multi-logit equations, baseline, and making classifications using probability outcomes. Learn about handling multiple categories in output variables including nominal as well as ordinal data.&lt;/p>
+    
+            &lt;ul style="list-style-type: disc; padding-left:20px;">
+                &lt;li>Logit and Log-Likelihood&lt;/li>
+                &lt;li>Category Baselining&lt;/li>
+                &lt;li>Modeling Nominal categorical data&lt;/li>
+                &lt;li>Handling Ordinal Categorical Data&lt;/li>
+                &lt;li>Interpreting the results of coefficient values&lt;/li>
+            &lt;/ul>
+            &lt;/div>
+            &lt;/div>
+            &lt;/div>
+    
+            &lt;div class="panel panel-warning">
+            &lt;div class="panel-heading" id="heading6DM11-module" role="tab">
+            &lt;h3 class="panel-title">&lt;a aria-controls="collapse6DM11-mod" aria-expanded="false" class="collapsed colsp" data-parent="#accordion1" data-toggle="collapse" href="#collapse6DM11-mod" role="button">6k. Advanced Regression for Count Data&lt;/a>&lt;/h3>
+            &lt;/div>
+    
+            &lt;div aria-labelledby="heading6DM11-module" class="panel-collapse collapse" id="collapse6DM11-mod" role="tabpanel">
+            &lt;div class="panel-body">
+            &lt;p>As part of this module, you learn further different regression techniques used for predicting discrete data. These regression techniques are used to analyze the numeric data known as count data. Based on the discrete probability distributions namely Poisson, negative binomial distribution the regression models try to fit the data to these distributions. Alternatively, when excessive zeros exist in the dependent variable, zero-inflated models are preferred, you will learn the types of zero-inflated models used to fit excessive zeros data.&lt;/p>
+    
+            &lt;ul style="list-style-type: disc; padding-left:20px;">
+                &lt;li>Poisson Regression&lt;/li>
+                &lt;li>Poisson Regression with Offset&lt;/li>
+                &lt;li>Negative Binomial Regression&lt;/li>
+                &lt;li>Treatment of data with Excessive Zeros&lt;/li>
+                &lt;li>Zero-inflated Poisson&lt;/li>
+                &lt;li>Zero-inflated Negative Binomial&lt;/li>
+                &lt;li>Hurdle Model&lt;/li>
+            &lt;/ul>
+            &lt;/div>
+            &lt;/div>
+            &lt;/div>
+    
+            &lt;div class="panel panel-warning">
+            &lt;div class="panel-heading" id="heading6DM12-module" role="tab">
+            &lt;h3 class="panel-title">&lt;a aria-controls="collapse6DM12-mod" aria-expanded="false" class="collapsed colsp" data-parent="#accordion1" data-toggle="collapse" href="#collapse6DM12-mod" role="button">6l. Kernel Method - SVM&lt;/a>&lt;/h3>
+            &lt;/div>
+    
+            &lt;div aria-labelledby="heading6DM12-module" class="panel-collapse collapse" id="collapse6DM12-mod" role="tabpanel">
+            &lt;div class="panel-body">
+            &lt;p>Support Vector Machines / Large-Margin / Max-Margin Classifier&lt;/p>
+    
+            &lt;ul style="list-style-type: disc; padding-left:20px;">
+                &lt;li>Hyperplanes&lt;/li>
+                &lt;li>Best Fit &quot;boundary&quot;&lt;/li>
+                &lt;li>Linear Support Vector Machine using Maximum Margin&lt;/li>
+                &lt;li>SVM for Noisy Data&lt;/li>
+                &lt;li>Non- Linear Space Classification&lt;/li>
+                &lt;li>Non-Linear Kernel Tricks&lt;/li>
+                &lt;li>Linear Kernel&lt;/li>
+                &lt;li>Polynomial&lt;/li>
+                &lt;li>Sigmoid&lt;/li>
+                &lt;li>Gaussian RBF&lt;/li>
+                &lt;li>SVM for Multi-Class Classification&lt;/li>
+                &lt;li>One vs. All&lt;/li>
+                &lt;li>One vs. One&lt;/li>
+                &lt;li>Directed Acyclic Graph (DAG) SVM&lt;/li>
+            &lt;/ul>
+            &lt;/div>
+            &lt;/div>
+            &lt;/div>
+    
+            &lt;div class="panel panel-warning">
+            &lt;div class="panel-heading" id="heading6DM13-module" role="tab">
+            &lt;h3 class="panel-title">&lt;a aria-controls="collapse6DM13-mod" aria-expanded="false" class="collapsed colsp" data-parent="#accordion1" data-toggle="collapse" href="#collapse6DM13-mod" role="button">6m. Survival Analytics&lt;/a>&lt;/h3>
+            &lt;/div>
+    
+            &lt;div aria-labelledby="heading6DM13-module" class="panel-collapse collapse" id="collapse6DM13-mod" role="tabpanel">
+            &lt;div class="panel-body">
+            &lt;p>Kaplan Meier method and life tables are used to estimate the time before the event occurs. Survival analysis is about analyzing the duration of time before the event. Real-time applications of survival analysis in customer churn, medical sciences, and other sectors are discussed as part of this module. Learn how survival analysis techniques can be used to understand the effect of the features on the event using the Kaplan-Meier survival plot.&lt;/p>
+    
+            &lt;ul style="list-style-type: disc; padding-left:20px;">
+                &lt;li>Examples of Survival Analysis&lt;/li>
+                &lt;li>Time to event&lt;/li>
+                &lt;li>Censoring&lt;/li>
+                &lt;li>Survival, Hazard, and Cumulative Hazard Functions&lt;/li>
+                &lt;li>Introduction to Parametric and non-parametric functions&lt;/li>
+            &lt;/ul>
+            &lt;/div>
+            &lt;/div>
+            &lt;/div>
+    
+            &lt;div class="panel panel-warning">
+            &lt;div class="panel-heading" id="heading6DM14-module" role="tab">
+            &lt;h3 class="panel-title">&lt;a aria-controls="collapse6DM14-mod" aria-expanded="false" class="collapsed colsp" data-parent="#accordion1" data-toggle="collapse" href="#collapse6DM14-mod" role="button">6n. Decision Tree&lt;/a>&lt;/h3>
+            &lt;/div>
+    
+            &lt;div aria-labelledby="heading6DM14-module" class="panel-collapse collapse" id="collapse6DM14-mod" role="tabpanel">
+            &lt;div class="panel-body">
+            &lt;p>Decision Tree models are some of the most powerful classifier algorithms based on classification rules. In this tutorial, you will learn about deriving the rules for classifying the dependent variable by constructing the best tree using statistical measures to capture the information from each of the attributes.&lt;/p>
+    
+            &lt;ul style="list-style-type: disc; padding-left:20px;">
+                &lt;li>Elements of classification tree - Root node, Child Node, Leaf Node, etc.&lt;/li>
+                &lt;li>Greedy algorithm&lt;/li>
+                &lt;li>Measure of Entropy&lt;/li>
+                &lt;li>Attribute selection using Information gain&lt;/li>
+                &lt;li>Decision Tree C5.0 and understanding various arguments&lt;/li>
+                &lt;li>Checking for Underfitting and Overfitting in Decision Tree&lt;/li>
+                &lt;li>Pruning &ndash; Pre and Post Prune techniques&lt;/li>
+                &lt;li>Generalization and Regulation Techniques to avoid overfitting in Decision Tree&lt;/li>
+                &lt;li>Random Forest and understanding various arguments&lt;/li>
+                &lt;li>Checking for Underfitting and Overfitting in Random Forest&lt;/li>
+                &lt;li>Generalization and Regulation Techniques to avoid overfitting in Random Forest&lt;/li>
+                &lt;li>Check out the &lt;a href="https://360digitmg.com/blog/decision-tree-interview-questions-answers">Decision Tree Questions&lt;/a> here.&lt;/li>
+            &lt;/ul>
+            &lt;/div>
+            &lt;/div>
+            &lt;/div>
+    
+            &lt;div class="panel panel-warning">
+            &lt;div class="panel-heading" id="heading6DM15-module" role="tab">
+            &lt;h3 class="panel-title">&lt;a aria-controls="collapse6DM15-mod" aria-expanded="false" class="collapsed colsp" data-parent="#accordion1" data-toggle="collapse" href="#collapse6DM15-mod" role="button">6o. Ensemble Techniques&lt;/a>&lt;/h3>
+            &lt;/div>
+    
+            &lt;div aria-labelledby="heading6DM15-module" class="panel-collapse collapse" id="collapse6DM15-mod" role="tabpanel">
+            &lt;div class="panel-body">
+            &lt;p>Learn about improving the reliability and accuracy of decision tree models using ensemble techniques. Bagging and Boosting are the go-to techniques in ensemble techniques. The parallel and sequential approaches taken in Bagging and Boosting methods are discussed in this module. Random forest is yet another ensemble technique constructed using multiple Decision trees and the outcome is drawn from the aggregating the results obtained from these combinations of trees. The Boosting algorithms AdaBoost and Extreme Gradient Boosting are discussed as part of this continuation module. You will also learn about stacking methods. Learn about these algorithms which are providing unprecedented accuracy and helping many aspiring data scientists win first place in various competitions such as Kaggle, CrowdAnalytix, etc.&lt;/p>
+    
+            &lt;ul style="list-style-type: disc; padding-left:20px;">
+                &lt;li>Overfitting&lt;/li>
+                &lt;li>Underfitting&lt;/li>
+                &lt;li>Voting&lt;/li>
+                &lt;li>Stacking&lt;/li>
+                &lt;li>Bagging&lt;/li>
+                &lt;li>Random Forest&lt;/li>
+                &lt;li>Boosting&lt;/li>
+                &lt;li>AdaBoost / Adaptive Boosting Algorithm&lt;/li>
+                &lt;li>Checking for Underfitting and Overfitting in AdaBoost&lt;/li>
+                &lt;li>Generalization and Regulation Techniques to avoid overfitting in AdaBoost&lt;/li>
+                &lt;li>Gradient Boosting Algorithm&lt;/li>
+                &lt;li>Checking for Underfitting and Overfitting in Gradient Boosting&lt;/li>
+                &lt;li>Generalization and Regulation Techniques to avoid overfitting in Gradient Boosting&lt;/li>
+                &lt;li>Extreme Gradient Boosting (XGB) Algorithm&lt;/li>
+                &lt;li>Checking for Underfitting and Overfitting in XGB&lt;/li>
+                &lt;li>Generalization and Regulation Techniques to avoid overfitting in XGB&lt;/li>
+                &lt;li>Check out the &lt;a href="https://360digitmg.com/blog/ensemble-technique-interview-questions-and-answers">Ensemble Techniques Interview Questions&lt;/a> here.&lt;/li>
+            &lt;/ul>
+            &lt;/div>
+            &lt;/div>
+            &lt;/div>
+    
+            &lt;div class="panel panel-warning">
+            &lt;div class="panel-heading" id="headingFTS-module" role="tab">
+            &lt;h3 class="panel-title">&lt;a aria-controls="collapseFTS-mod" aria-expanded="false" class="collapsed colsp colsp-content" data-parent="#accordion1" data-toggle="collapse" href="#collapseFTS-mod" role="button">7. Forecasting/Time Series&lt;/a>&lt;/h3>
+            &lt;/div>
+            &lt;/div>
+    
+            &lt;div class="panel panel-warning">
+            &lt;div class="panel-heading" id="heading7FTS-module" role="tab">
+            &lt;h3 class="panel-title">&lt;a aria-controls="collapse7FTS-mod" aria-expanded="false" class="collapsed colsp" data-parent="#accordion1" data-toggle="collapse" href="#collapse7FTS-mod" role="button">7a. Model-Driven Algorithms&lt;/a>&lt;/h3>
+            &lt;/div>
+    
+            &lt;div aria-labelledby="heading7FTS-module" class="panel-collapse collapse" id="collapse7FTS-mod" role="tabpanel">
+            &lt;div class="panel-body">
+            &lt;p>Time series analysis is performed on the data which is collected with respect to time. The response variable is affected by time. Understand the time series components, Level, Trend, Seasonality, Noise, and methods to identify them in a time series data. The different forecasting methods available to handle the estimation of the response variable based on the condition of whether the past is equal to the future or not will be introduced in this module. In this first module of forecasting, you will learn the application of Model-based forecasting techniques.&lt;/p>
+    
+            &lt;ul style="list-style-type: disc; padding-left:20px;">
+                &lt;li>Introduction to time series data&lt;/li>
+                &lt;li>Steps to forecasting&lt;/li>
+                &lt;li>Components to time series data&lt;/li>
+                &lt;li>Scatter plot and Time Plot&lt;/li>
+                &lt;li>Lag Plot&lt;/li>
+                &lt;li>ACF - Auto-Correlation Function / Correlogram&lt;/li>
+                &lt;li>Visualization principles&lt;/li>
+                &lt;li>Na&iuml;ve forecast methods&lt;/li>
+                &lt;li>Errors in the forecast and it metrics - ME, MAD, MSE, RMSE, MPE, MAPE&lt;/li>
+                &lt;li>Model-Based approaches&lt;/li>
+                &lt;li>Linear Model&lt;/li>
+                &lt;li>Exponential Model&lt;/li>
+                &lt;li>Quadratic Model&lt;/li>
+                &lt;li>Additive Seasonality&lt;/li>
+                &lt;li>Multiplicative Seasonality&lt;/li>
+                &lt;li>Model-Based approaches Continued&lt;/li>
+                &lt;li>AR (Auto-Regressive) model for errors&lt;/li>
+                &lt;li>Random walk&lt;/li>
+                &lt;li>Check out the &lt;a href="https://360digitmg.com/blog/forecasting-time-series-interview-questions-answers">Time Series Interview Questions&lt;/a> here.&lt;/li>
+            &lt;/ul>
+            &lt;/div>
+            &lt;/div>
+            &lt;/div>
+    
+            &lt;div class="panel panel-warning">
+            &lt;div class="panel-heading" id="heading7FTS2-module" role="tab">
+            &lt;h3 class="panel-title">&lt;a aria-controls="collapse7FTS2-mod" aria-expanded="false" class="collapsed colsp" data-parent="#accordion1" data-toggle="collapse" href="#collapse7FTS2-mod" role="button">7b. Data-Driven Algorithms&lt;/a>&lt;/h3>
+            &lt;/div>
+    
+            &lt;div aria-labelledby="heading7FTS2-module" class="panel-collapse collapse" id="collapse7FTS2-mod" role="tabpanel">
+            &lt;div class="panel-body">
+            &lt;p>In this continuation module of forecasting learn about data-driven forecasting techniques. Learn about ARMA and ARIMA models which combine model-based and data-driven techniques. Understand the smoothing techniques and variations of these techniques. Get introduced to the concept of de-trending and de-seasonalize the data to make it stationary. You will learn about seasonal index calculations which are used to re-seasonalize the result obtained by smoothing models.&lt;/p>
+    
+            &lt;ul style="list-style-type: disc; padding-left:20px;">
+                &lt;li>ARMA (Auto-Regressive Moving Average), Order p and q&lt;/li>
+                &lt;li>ARIMA (Auto-Regressive Integrated Moving Average), Order p, d, and q&lt;/li>
+                &lt;li>ARIMA, ARIMAX, SARIMAX&lt;/li>
+                &lt;li>AutoTS, AutoARIMA&lt;/li>
+                &lt;li>A data-driven approach to forecasting&lt;/li>
+                &lt;li>Smoothing techniques&lt;/li>
+                &lt;li>Moving Average&lt;/li>
+                &lt;li>Exponential Smoothing&lt;/li>
+                &lt;li>Holt&#39;s / Double Exponential Smoothing&lt;/li>
+                &lt;li>Winters / Holt-Winters&lt;/li>
+                &lt;li>De-seasoning and de-trending&lt;/li>
+                &lt;li>Seasonal Indexes&lt;/li>
+            &lt;/ul>
+            &lt;/div>
+            &lt;/div>
+            &lt;/div>
+    
+            &lt;div class="panel panel-warning">
+            &lt;div class="panel-heading" id="heading7FTS2q-module" role="tab">
+            &lt;h3 class="panel-title">&lt;a aria-controls="collapse7FTS2q-mod" aria-expanded="false" class="collapsed colsp" data-parent="#accordion1" data-toggle="collapse" href="#collapse7FTS2q-mod" role="button">7c. Deep Learning for Time Series &lt;span class="blink"> New! &lt;/span>&lt;/a>&lt;/h3>
+            &lt;/div>
+    
+            &lt;div aria-labelledby="heading7FTS2q-module" class="panel-collapse collapse" id="collapse7FTS2q-mod" role="tabpanel">
+            &lt;div class="panel-body">
+            &lt;ul style="list-style-type: disc; padding-left:20px;">
+                &lt;li>RNN, Bidirectional RNN, Deep Bidirectional RNN&lt;/li>
+                &lt;li>Transformers for Forecasting&lt;/li>
+                &lt;li>N-BEATS, N-BEATSx&lt;/li>
+                &lt;li>N-HiTS&lt;/li>
+                &lt;li>TFT - Temporal Fusion Transformer&lt;/li>
+            &lt;/ul>
+            &lt;/div>
+            &lt;/div>
+            &lt;/div>
+    
+            &lt;div class="panel panel-warning">
+            &lt;div class="panel-heading" id="heading8BBM-module" role="tab">
+            &lt;h3 class="panel-title">&lt;a aria-controls="collapse8BBM-mod" aria-expanded="false" class="collapsed colsp colsp-content" data-parent="#accordion1" data-toggle="collapse" href="#collapse8BBM-mod" role="button">8. Black Box method (ANN, CNN, RNN)&lt;/a>&lt;/h3>
+            &lt;/div>
+            &lt;/div>
+    
+            &lt;div class="panel panel-warning">
+            &lt;div class="panel-heading" id="heading8BB1-module" role="tab">
+            &lt;h3 class="panel-title">&lt;a aria-controls="collapse8BB1-mod" aria-expanded="false" class="collapsed colsp" data-parent="#accordion1" data-toggle="collapse" href="#collapse8BB1-mod" role="button">8a. Introduction to Perceptron and Multilayer Perceptron&lt;/a>&lt;/h3>
+            &lt;/div>
+    
+            &lt;div aria-labelledby="heading8BB1-module" class="panel-collapse collapse" id="collapse8BB1-mod" role="tabpanel">
+            &lt;div class="panel-body">
+            &lt;p>The &lt;a href="https://360digitmg.com/blog/perceptron-algorithm">Perceptron Algorithm&lt;/a> is defined based on a biological brain model. You will talk about the parameters used in the perceptron algorithm which is the foundation of developing much complex neural network models for AI applications. Understand the application of perceptron algorithms to classify binary data in a linearly separable scenario.&lt;/p>
+    
+            &lt;ul style="list-style-type: disc; padding-left:20px;">
+                &lt;li>Neurons of a Biological Brain&lt;/li>
+                &lt;li>Artificial Neuron&lt;/li>
+                &lt;li>Perceptron&lt;/li>
+                &lt;li>Perceptron Algorithm&lt;/li>
+                &lt;li>Use case to classify a linearly separable data&lt;/li>
+                &lt;li>Multilayer Perceptron to handle non-linear data&lt;/li>
+            &lt;/ul>
+            &lt;/div>
+            &lt;/div>
+            &lt;/div>
+    
+            &lt;div class="panel panel-warning">
+            &lt;div class="panel-heading" id="heading8BB2-module" role="tab">
+            &lt;h3 class="panel-title">&lt;a aria-controls="collapse8BB2-mod" aria-expanded="false" class="collapsed colsp" data-parent="#accordion1" data-toggle="collapse" href="#collapse8BB2-mod" role="button">8b. Building Blocks of Neural Network - ANN&lt;/a>&lt;/h3>
+            &lt;/div>
+    
+            &lt;div aria-labelledby="heading8BB2-module" class="panel-collapse collapse" id="collapse8BB2-mod" role="tabpanel">
+            &lt;div class="panel-body">
+            &lt;p>Neural Network is a black box technique used for deep learning models. Learn the logic of training and weights calculations using various parameters and their tuning. Understand the activation function and integration functions used in developing a &lt;a href="https://360digitmg.com/blog/what-is-an-artificial-neural-network">Artificial Neural Network&lt;/a>.&lt;/p>
+    
+            &lt;ul style="list-style-type: disc; padding-left:20px;">
+                &lt;li>Integration functions&lt;/li>
+                &lt;li>Activation functions&lt;/li>
+                &lt;li>Weights&lt;/li>
+                &lt;li>Bias&lt;/li>
+                &lt;li>Learning Rate (eta) - Shrinking Learning Rate, Decay Parameters&lt;/li>
+                &lt;li>Error functions - Entropy, Binary Cross Entropy, Categorical Cross Entropy, KL Divergence, etc.&lt;/li>
+            &lt;/ul>
+            &lt;/div>
+            &lt;/div>
+            &lt;/div>
+    
+            &lt;div class="panel panel-warning">
+            &lt;div class="panel-heading" id="heading8BB3-module" role="tab">
+            &lt;h3 class="panel-title">&lt;a aria-controls="collapse8BB3-mod" aria-expanded="false" class="collapsed colsp" data-parent="#accordion1" data-toggle="collapse" href="#collapse8BB3-mod" role="button">8c. Deep Learning Primer&lt;/a>&lt;/h3>
+            &lt;/div>
+    
+            &lt;div aria-labelledby="heading8BB3-module" class="panel-collapse collapse" id="collapse8BB3-mod" role="tabpanel">
+            &lt;div class="panel-body">
+            &lt;ul style="list-style-type: disc; padding-left:20px;">
+                &lt;li>Artificial Neural Networks&lt;/li>
+                &lt;li>ANN Structure&lt;/li>
+                &lt;li>Error Surface&lt;/li>
+                &lt;li>Gradient Descent Algorithm&lt;/li>
+                &lt;li>Backward Propagation&lt;/li>
+                &lt;li>Network Topology&lt;/li>
+                &lt;li>Principles of Gradient Descent (Manual Calculation)&lt;/li>
+                &lt;li>Learning Rate (eta)&lt;/li>
+                &lt;li>Batch Gradient Descent&lt;/li>
+                &lt;li>Stochastic Gradient Descent&lt;/li>
+                &lt;li>Minibatch Stochastic Gradient Descent&lt;/li>
+                &lt;li>Optimization Methods: Adagrad, Adadelta, RMSprop, Adam&lt;/li>
+                &lt;li>Convolution Neural Network (CNN)&lt;/li>
+                &lt;li>ImageNet Challenge &ndash; Winning Architectures&lt;/li>
+                &lt;li>Parameter Explosion with MLPs&lt;/li>
+                &lt;li>Convolution Networks&lt;/li>
+                &lt;li>Recurrent Neural Network&lt;/li>
+                &lt;li>Language Models&lt;/li>
+                &lt;li>Traditional Language Model&lt;/li>
+                &lt;li>Disadvantages of MLP&lt;/li>
+                &lt;li>Back Propagation Through Time&lt;/li>
+                &lt;li>Long Short-Term Memory (LSTM)&lt;/li>
+                &lt;li>Gated Recurrent Network (GRU)&lt;/li>
+            &lt;/ul>
+            &lt;/div>
+            &lt;/div>
+            &lt;/div>
+    
+            &lt;div class="panel panel-warning">
+            &lt;div class="panel-heading" id="heading9GAI-module" role="tab">
+            &lt;h3 class="panel-title">&lt;a aria-controls="collapse9GAI-mod" aria-expanded="false" class="collapsed colsp" data-parent="#accordion1" data-toggle="collapse" href="#collapse9GAI-mod" role="button">9. Generative AI &amp; Transformers &lt;span class="blink"> New! &lt;/span>&lt;/a>&lt;/h3>
+            &lt;/div>
+    
+            &lt;div aria-labelledby="heading9GAI-module" class="panel-collapse collapse" id="collapse9GAI-mod" role="tabpanel">
+            &lt;div class="panel-body">
+            &lt;ul style="list-style-type: disc; padding-left:20px;">
+                &lt;li>Sequence 2 Sequence Models&lt;/li>
+                &lt;li>Transformers&lt;/li>
+                &lt;li>Generative AI&lt;/li>
+                &lt;li>ChatGPT&lt;/li>
+                &lt;li>DALL-E-2&lt;/li>
+                &lt;li>Mid Journey&lt;/li>
+                &lt;li>Crayon&lt;/li>
+            &lt;/ul>
+            &lt;/div>
+            &lt;/div>
+            &lt;/div>
+    
+            &lt;div class="panel panel-warning">
+            &lt;div class="panel-heading" id="heading10PE-module" role="tab">
+            &lt;h3 class="panel-title">&lt;a aria-controls="collapse10PE-mod" aria-expanded="false" class="collapsed colsp" data-parent="#accordion1" data-toggle="collapse" href="#collapse10PE-mod" role="button">10. Prompt Engineering &lt;span class="blink"> New! &lt;/span>&lt;/a>&lt;/h3>
+            &lt;/div>
+    
+            &lt;div aria-labelledby="heading10PE-module" class="panel-collapse collapse" id="collapse10PE-mod" role="tabpanel">
+            &lt;div class="panel-body">
+            &lt;ul style="list-style-type: disc; padding-left:20px;">
+                &lt;li>What Is Prompt Engineering?&lt;/li>
+                &lt;li>Understanding Prompts: Inputs, Outputs, and Parameters&lt;/li>
+                &lt;li>Crafting Simple Prompts: Techniques and Best Practices&lt;/li>
+                &lt;li>Evaluating and Refining Prompts: An Iterative Process&lt;/li>
+                &lt;li>Role Prompting and Nested Prompts&lt;/li>
+                &lt;li>Chain-of-Thought Prompting&lt;/li>
+                &lt;li>Multilingual and Multimodal Prompt Engineering&lt;/li>
+                &lt;li>Generating Ideas Using &quot;Chaos Prompting&quot;&lt;/li>
+                &lt;li>Using Prompt Compression&lt;/li>
+            &lt;/ul>
+            &lt;/div>
+            &lt;/div>
+            &lt;/div>
+    
+            &lt;h2 class="lerns-hdng">SUNY University Syllabus&lt;/h2>
+    
+            &lt;div class="panel panel-warning">
+            &lt;div class="panel-heading" id="headingSUN1-module" role="tab">
+            &lt;h3 class="panel-title">&lt;a aria-controls="collapseSUN1-mod" aria-expanded="false" class="collapsed colsp" data-parent="#accordion1" data-toggle="collapse" href="#collapseSUN1-mod" role="button">1. AWS Certified Machine Learning &lt;span class="blink"> New! &lt;/span>&lt;/a>&lt;/h3>
+            &lt;/div>
+    
+            &lt;div aria-labelledby="headingSUN1-module" class="panel-collapse collapse" id="collapseSUN1-mod" role="tabpanel">
+            &lt;div class="panel-body">
+            &lt;ul style="list-style-type: disc; padding-left:20px;">
+                &lt;li>Data Engineering, Machine Learning, &amp; AWS&lt;/li>
+                &lt;li>Amazon S3 Simple Storage Service&lt;/li>
+                &lt;li>Data Movement&lt;/li>
+                &lt;li>Data Pipelines &amp; Workflows&lt;/li>
+                &lt;li>Jupyter Notebook &amp; Python&lt;/li>
+                &lt;li>Data Analysis Fundamentals&lt;/li>
+                &lt;li>Athena, QuickSight, &amp; EMR&lt;/li>
+                &lt;li>Feature Engineering Overview&lt;/li>
+                &lt;li>Problem Framing &amp; Algorithm Selection&lt;/li>
+                &lt;li>Machine Learning in SageMaker&lt;/li>
+                &lt;li>ML Algorithms in SageMaker&lt;/li>
+                &lt;li>Advanced SageMaker Functionality&lt;/li>
+                &lt;li>AI/ML Services&lt;/li>
+                &lt;li>Problem Formulation &amp; Data Collection&lt;/li>
+                &lt;li>Data Preparation &amp; SageMaker Security&lt;/li>
+                &lt;li>Model Training &amp; Evaluation&lt;/li>
+                &lt;li>AI Services &amp; SageMaker Applications&lt;/li>
+            &lt;/ul>
+            &lt;/div>
+            &lt;/div>
+            &lt;/div>
+    
+            &lt;div class="panel panel-warning">
+            &lt;div class="panel-heading" id="headingSUN2-module" role="tab">
+            &lt;h3 class="panel-title">&lt;a aria-controls="collapseSUN2-mod" aria-expanded="false" class="collapsed colsp" data-parent="#accordion1" data-toggle="collapse" href="#collapseSUN2-mod" role="button">2. Designing on Implementing a Data Science Solution on Azure &lt;span class="blink"> New! &lt;/span>&lt;/a>&lt;/h3>
+            &lt;/div>
+    
+            &lt;div aria-labelledby="headingSUN2-module" class="panel-collapse collapse" id="collapseSUN2-mod" role="tabpanel">
+            &lt;div class="panel-body">
+            &lt;ul style="list-style-type: disc; padding-left:20px;">
+                &lt;li>Machine Learning&lt;/li>
+                &lt;li>Machine Learning Services&lt;/li>
+                &lt;li>Machine Learning Regression Models&lt;/li>
+                &lt;li>Machine Learning Classification Models&lt;/li>
+                &lt;li>Machine Learning Clustering Models&lt;/li>
+                &lt;li>Project Jupyter &amp; Notebooks&lt;/li>
+                &lt;li>Azure Machine Learning Workspaces&lt;/li>
+                &lt;li>Azure Data Platform Services&lt;/li>
+                &lt;li>Azure Storage Accounts&lt;/li>
+                &lt;li>Storage Strategy&lt;/li>
+                &lt;li>Azure Data Factory&lt;/li>
+                &lt;li>Non-relational Data Stores&lt;/li>
+                &lt;li>Machine Learning Data Stores &amp; Compute&lt;/li>
+                &lt;li>Machine Learning Orchestration &amp; Deployment&lt;/li>
+                &lt;li>Model Features &amp; Differential Privacy&lt;/li>
+                &lt;li>Machine Learning Model Monitoring&lt;/li>
+                &lt;li>Azure Data Storage Monitoring&lt;/li>
+                &lt;li>Data Process Monitoring&lt;/li>
+                &lt;li>Data Solution Optimization&lt;/li>
+                &lt;li>High Availability &amp; Disaster Recovery&lt;/li>
+            &lt;/ul>
+            &lt;/div>
+            &lt;/div>
+            &lt;/div>
+    
+            &lt;div class="panel panel-warning">
+            &lt;div class="panel-heading" id="headingSUN3-module" role="tab">
+            &lt;h3 class="panel-title">&lt;a aria-controls="collapseSUN3-mod" aria-expanded="false" class="collapsed colsp" data-parent="#accordion1" data-toggle="collapse" href="#collapseSUN3-mod" role="button">3. Certificate from SUNY University &lt;span class="blink"> New! &lt;/span>&lt;/a>&lt;/h3>
+            &lt;/div>
+    
+            &lt;div aria-labelledby="headingSUN3-module" class="panel-collapse collapse" id="collapseSUN3-mod" role="tabpanel">
+            &lt;div class="panel-body">
+            &lt;ul style="list-style-type: disc; padding-left:20px;">
+                &lt;li>Certificate Course in Data Science by SUNY&lt;/li>
+            &lt;/ul>
+            &lt;/div>
+            &lt;/div>
+            &lt;/div>
+            &lt;/div>
+    </pre>
+    <button class="copyButton" onclick="copyText('section-4')">Copy</button>
+    <h1 class="result"></h1>
+</div></div> <br><br>
+<div class="box">
+<div class="section-3">
+    <pre>
+        &lt;style type="text/css">
+        .block {
+            color: #034ea2!important;
+            font-size: 24px!important;
+        }
+        .who {
+            margin-bottom: 15px!important;
+            color: #fff!important;
+            font-size: 22px!important;
+        }
+        &lt;/style>
+        &lt;div class="block-sec">
+            &lt;p class="block">Block Your Time&lt;/p>
+
+            &lt;div class="row">
+                &lt;div class="col-md-12">
+                    &lt;div class="bl-tm">
+                        &lt;div class="col-md-3">&lt;img alt="industrial revolution" src="https://360digit.b-cdn.net/assets/img/class-room.png" />&lt;/div>
+
+                        &lt;div class="col-md-9 block-hours">
+                            &lt;p>&lt;span class="offer-perc">184&lt;/span> &lt;span class="offer-cont">hours&lt;/span>&lt;/p>
+
+                            &lt;p>Live Online Sessions&lt;/p>
+                        &lt;/div>
+                    &lt;/div>
+
+                    &lt;div class="bl-tm">
+                        &lt;div class="col-md-3">&lt;img alt="industrial revolution" src="https://360digit.b-cdn.net/assets/img/assi-elearn.png" />&lt;/div>
+
+                        &lt;div class="col-md-9 block-hours">
+                            &lt;p>&lt;span class="offer-perc">150+&lt;/span> &lt;span class="offer-cont">hours&lt;/span>&lt;/p>
+
+                            &lt;p>Assignments&lt;/p>
+                        &lt;/div>
+                    &lt;/div>
+
+                    &lt;div class="bl-tm">
+                        &lt;div class="col-md-3">&lt;img alt="industrial revolution" src="https://360digit.b-cdn.net/assets/img/live-project.png" />&lt;/div>
+
+                        &lt;div class="col-md-9 block-hours">
+                            &lt;p>&lt;span class="offer-perc">120&lt;/span> &lt;span class="offer-cont">hours&lt;/span>&lt;/p>
+
+                            &lt;p>Live Projects&lt;/p>
+                        &lt;/div>
+                    &lt;/div>
+
+                    &lt;div class="bl-enrl">
+                        &lt;div class="col-md-12">&lt;a class="custom-btn suctm-bg" data-target="#request-a-callback" data-toggle="modal">&lt;span>Enroll Now&lt;/span>&lt;/a>&lt;/div>
+                    &lt;/div>
+                &lt;/div>
+            &lt;/div>
+        &lt;/div>
+
+        &lt;div class="who-shd-atn-sec">
+            &lt;p class="who">Who Should Sign Up?&lt;/p>
+
+            &lt;ul>
+                &lt;li class="info-course__item">IT Engineers&lt;/li>
+                &lt;li class="info-course__item">Data and Analytics Manager&lt;/li>
+                &lt;li class="info-course__item">Business Analysts&lt;/li>
+                &lt;li class="info-course__item">Data Engineers&lt;/li>
+                &lt;li class="info-course__item">Banking and Finance Analysts&lt;/li>
+                &lt;li class="info-course__item">Marketing Managers&lt;/li>
+                &lt;li class="info-course__item">Supply Chain Professionals&lt;/li>
+                &lt;li class="info-course__item">HR Managers&lt;/li>
+                &lt;li class="info-course__item">Math, Science and Commerce Graduates&lt;/li>
+            &lt;/ul>
+        &lt;/div>
+    </pre>
+    <button class="copyButton" onclick="copyText('section-3')">Copy</button>
+    <h1 class="result"></h1>
+</div></div> <br><br>
+<div class="box">
+<div class="section-5">
+    <pre>
+        &lt;div class="undefined">&lt;img alt="data science course using python in <span class="nameSpan"></span>" src="https://360digit.b-cdn.net/assets/admin/ckfinder/userfiles/files/images/python-1.png" />&lt;/div>
+
+        &lt;div class="undefined">&lt;img alt="data science course using r programming in <span class="nameSpan"></span>" src="https://360digit.b-cdn.net/assets/admin/ckfinder/userfiles/files/images/r.png" />&lt;/div>
+
+        &lt;div class="undefined">&lt;img alt="data science course using r studio programming in <span class="nameSpan"></span>" src="https://360digit.b-cdn.net/assets/img/r-studio-1.png" />&lt;/div>
+
+        &lt;div class="undefined">&lt;img alt="data science course with keras tool in <span class="nameSpan"></span>" src="https://360digit.b-cdn.net/assets/img/keras-1.png" />&lt;/div>
+
+        &lt;div class="undefined">&lt;img alt="data science course with jupyter in <span class="nameSpan"></span>" src="https://360digit.b-cdn.net/assets/admin/ckfinder/userfiles/files/newimage/jupyter.jpg" />&lt;/div>
+
+        &lt;div class="undefined">&lt;img alt="data science course with pytorch in <span class="nameSpan"></span>" src="https://360digit.b-cdn.net/assets/admin/ckfinder/userfiles/files/newimage/Pytorch.jpg" />&lt;/div>
+
+        &lt;div class="undefined">&lt;img alt="data science course with Tensor flow tool in <span class="nameSpan"></span>" src="https://360digit.b-cdn.net/assets/admin/ckfinder/userfiles/files/newimage/Tensor%20Flow.jpg" />&lt;/div>
+
+        &lt;div class="undefined">&lt;img alt="data science with spyder in <span class="nameSpan"></span>" src="https://360digit.b-cdn.net/assets/admin/ckfinder/userfiles/files/newimage/Spyder.jpg" />&lt;/div>
+
+        &lt;div class="undefined">&lt;img alt="data science with numpy tool in <span class="nameSpan"></span>" src="https://360digit.b-cdn.net/assets/admin/ckfinder/userfiles/files/newimage/Numpy.jpg" />&lt;/div>
+
+        &lt;div class="undefined">&lt;img alt="data science with pandas in <span class="nameSpan"></span>" src="https://360digit.b-cdn.net/assets/admin/ckfinder/userfiles/files/newimage/Pandas.jpg" />&lt;/div>
+
+        &lt;div class="undefined">&lt;img alt="data science course scikit in <span class="nameSpan"></span>" src="https://360digit.b-cdn.net/assets/admin/ckfinder/userfiles/files/newimage/Scikit%20Learn.jpg" />&lt;/div>
+
+        &lt;div class="undefined">&lt;img alt="data science course with scipy in <span class="nameSpan"></span>" src="https://360digit.b-cdn.net/assets/admin/ckfinder/userfiles/files/newimage/scipy.jpg" />&lt;/div>
+
+        &lt;div class="undefined">&lt;img alt="data analytics course in <span class="nameSpan"></span>" src="https://360digitmg.com/assets/admin/ckfinder/userfiles/images/logo/certificate/Logo%20-%20Product-07.png" />&lt;/div>
+
+        &lt;div class="undefined">&lt;img alt="data analytics course in <span class="nameSpan"></span>" src="https://360digitmg.com/assets/admin/ckfinder/userfiles/images/logo/certificate/Logo%20-%20Product-08.png" />&lt;/div>-->
+    </pre>
+    <button class="copyButton" onclick="copyText('section-5')">Copy</button>
+    <h1 class="result"></h1>
+</div></div> <br><br>
+<div class="box">
+<div class="section-6">
+<pre>
+    &lt;h5>Why Choose 360DigiTMG for Data Science Training Institute?&lt;/h5>
+	&lt;!-- &lt;h5>How We Prepare You&lt;/h5> -->
+
+	&lt;div class="row">
+	    &lt;div class="col-md-6">
+	    &lt;div class="cont-mg">&lt;img alt="data science certification in <span class="nameSpan"></span> - 360digitmg" src="https://360digit.b-cdn.net/assets/admin/ckfinder/userfiles/images/ds-how-we-prepare-you/why-choose-left.png" />&lt;/div>
+	    &lt;/div>
+    
+	    &lt;div class="col-md-6">
+	    &lt;div class="cont-mg">&lt;img alt="data science certification in <span class="nameSpan"></span> - 360digitmg" src="https://360digit.b-cdn.net/assets/admin/ckfinder/userfiles/images/ds-how-we-prepare-you/why-choose-right.png" />&lt;/div>
+	    &lt;/div>
+	&lt;/div>
+</pre>
+    <button class="copyButton" onclick="copyText('section-6')">Copy</button>
+    <h1 class="result"></h1>
+</div></div> <br><br>
+<div class="box">
+<div class="section-7">
+    <pre>
+    &lt;style type="text/css">
+        .zoom-cert,
+        .zoom-cert2 {
+            transition: transform 0.5s ease-in-out;
+        }
+    
+        .zoom-cert:hover,
+        .zoom-cert2:hover {
+            transform: scale(2.1);
+            z-index: 9999999;
+        }
+    
+        .certificate-img img {
+            width: 100%;
+            height: auto;
+        }
+    
+        .col-md-3,
+        .col-md-6 {
+            position: relative;
+        }
+    &lt;/style>
+    &lt;div class="col-md-3 zoom-cert">
+        &lt;div class="certificate-img">&lt;img alt="data science using python and r certification in <span class="nameSpan"></span>- 360digitmg"
+                class="img-responsive"
+                src="https://360digit.b-cdn.net/assets/admin/ckfinder/userfiles/images/certificates/certificate3/1%20-%20DS.png" />
+        &lt;/div>
+    &lt;/div>
+    
+    &lt;div class="col-md-3 zoom-cert2">
+        &lt;div class="certificate-img">&lt;img alt="data science using python and r certification in <span class="nameSpan"></span>- 360digitmg"
+                class="img-responsive"
+                src="https://360digit.b-cdn.net/assets/admin/ckfinder/userfiles/images/certificates/certificate3/DS-01.jpg" />
+        &lt;/div>
+    &lt;/div>
+    
+    &lt;div class="col-md-6">
+        &lt;h3>Certificate&lt;/h3>
+    
+        &lt;p>Earn a certificate and demonstrate your commitment to the profession. Use it to distinguish yourself in the job
+            market, get recognised at the workplace and boost your confidence. The &lt;strong>Data Science Certificate&lt;/strong>
+            is your passport to an accelerated career path.&lt;/p>
+    &lt;/div>
+    </pre>
+    <button class="copyButton" onclick="copyText('section-7')">Copy</button>
+    <h1 class="result"></h1>
+</div></div> <br><br>
+<div class="box">
+<div class="section-8">
+    <pre>
+        &lt;div class="container">
+	&lt;div class="course-tags">
+		&lt;h3>Data Science Training Institutes in Other Locations&lt;/h3>
+
+		&lt;div class="col-md-12">
+			&lt;ul class="course-tags-ul">
+				&lt;li>&lt;a href="https://360digitmg.com/australia/victoria/data-science-certification-course-training-institute" title="Data Science course in Victoria">Victoria&lt;/a>&lt;/li>
+				&lt;li>&lt;a href="https://360digitmg.com/australia/sydney/data-science-certification-course-training-institute" title="Data Science course in Sydney">Sydney&lt;/a>&lt;/li>
+				&lt;li>&lt;a href="https://360digitmg.com/australia/queensland/data-science-certification-course-training-institute" title="Data Science course in Queensland">Queensland&lt;/a>&lt;/li>
+				&lt;li>&lt;a href="https://360digitmg.com/australia/perth/data-science-certification-course-training-institute" title="Data Science course in Perth">Perth&lt;/a>&lt;/li>
+				&lt;li>&lt;a href="https://360digitmg.com/australia/melbourne/data-science-certification-course-training-institute" title="Data Science course in Melbourne">Melbourne&lt;/a>&lt;/li>
+				&lt;li>&lt;a href="https://360digitmg.com/australia/hobart/data-science-certification-course-training-institute" title="Data Science course in Hobart">Hobart&lt;/a>&lt;/li>
+				&lt;li>&lt;a href="https://360digitmg.com/australia/brisbane/data-science-certification-course-training-institute" title="Data Science course in Brisbane">Brisbane&lt;/a>&lt;/li>
+				&lt;li>&lt;a href="https://360digitmg.com/australia/adelaide/data-science-certification-course-training-institute" title="Data Science course in Adelaide">Adelaide&lt;/a>&lt;/li>
+				&lt;li>&lt;a href="https://360digitmg.com/malaysia/certification-program-in-data-science" title="Data Science course in Malaysia">Malaysia&lt;/a>&lt;/li>
+				&lt;li>&lt;a href="https://360digitmg.com/india/hyderabad/data-science-certification-course-training-institute" title="Data Science course in Hyderabad">Hyderabad&lt;/a>&lt;/li>
+				&lt;li>&lt;a href="https://360digitmg.com/india/bangalore/data-science-certification-course-training-institute" title="Data Science course in Bangalore">Bangalore&lt;/a>&lt;/li>
+				&lt;li>&lt;a href="https://360digitmg.com/india/chennai/data-science-certification-course-training-institute" title="Data Science course in Chennai">Chennai&lt;/a>&lt;/li>
+			&lt;/ul>
+		&lt;/div>
+	&lt;/div>
+&lt;/div>
+    </pre>
+    <button class="copyButton" onclick="copyText('section-8')">Copy</button>
+    <h1 class="result"></h1>
+</div></div> <br><br>
+
 <script>
     document.addEventListener("DOMContentLoaded", function() {
-      var nameInput = document.getElementById("nameInput");
-      var nameSpans = document.querySelectorAll(".nameSpan");
-      var copyButton = document.getElementById("copyButton");
-      var resultElement = document.querySelector(".result");
+        var nameInput = document.getElementById("nameInput");
+        var nameSpans = document.querySelectorAll(".nameSpan");
     
-      function copyText() {
-        var copyText = document.querySelector('.copy');
+        nameInput.addEventListener("input", function() {
+            var inputValue = nameInput.value;
+            nameSpans.forEach(function(span) {
+                span.textContent = inputValue;
+            });
+        });
+    
+        nameInput.addEventListener("keydown", function(event) {
+            if (event.key === "Enter") {
+                copyText();
+            }
+        });
+    });
+
+    function copyText(sectionClass) {
+        var section = document.querySelector('.' + sectionClass + ' pre');
         var range = document.createRange();
-        range.selectNode(copyText);
-        window.getSelection().removeAllRanges(); // Clear previous selections
+        range.selectNode(section);
+        window.getSelection().removeAllRanges();
         window.getSelection().addRange(range);
         document.execCommand("copy");
-        window.getSelection().removeAllRanges(); // Clear the selection after copying
-        resultElement.textContent = "Copied '" + nameInput.value + "'";
-      }
-    
-      copyButton.addEventListener("click", copyText);
-    
-      nameInput.addEventListener("input", function() {
-        var inputValue = nameInput.value;
-        nameSpans.forEach(function(span) {
-          span.textContent = inputValue;
-        });
-      });
-    
-      nameInput.addEventListener("keydown", function(event) {
-        if (event.key === "Enter") {
-          copyText();
-        }
-      });
-    });
-    </script>
+        window.getSelection().removeAllRanges();
+        var resultElement = document.querySelector('.' + sectionClass + ' .result');
+        resultElement.textContent = "Copied content with location: " + document.getElementById("nameInput").value;
+    }
+</script>
 </body>
 </html>

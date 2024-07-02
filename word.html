@@ -5,6 +5,28 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Replace Word Dynamically</title>
 <style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 20px;
+        background-color: #f0f0f0;
+    }
+    .copy {
+        margin-bottom: 20px;
+    }
+    .copy input {
+        width: 300px;
+        padding: 10px;
+        font-size: 16px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+    }
+    .box {
+        border: 1px solid #2b2b2e;
+        background-color: #fff;
+        margin-bottom: 20px;
+        padding: 20px;
+        border-radius: 10px;
+    }
     .nameSpan {
         color: red;
     }
@@ -17,6 +39,7 @@
         border-radius: 5px;
         cursor: pointer;
         font-size: 16px;
+        margin-top: 10px;
     }
     .copyButton:hover {
         background-color: #45a049;
@@ -26,9 +49,17 @@
         font-size: 18px;
         margin-top: 10px;
     }
-    .box{
-        border: #2b2b2e 1px solid;
-        margin-left: 10px;
+    .section-1, .section-2, .section-3, .section-4, .section-5, .section-6, .section-7, .section-8  {
+        position: relative;
+    }
+    .section-1 pre, .section-2 pre, .section-3 pre, .section-4 pre, .section-5 pre, .section-6 pre, .section-7 pre, .section-8 pre{
+        white-space: pre-wrap;
+        word-wrap: break-word;
+        background-color: #e9ecef;
+        padding: 15px;
+        border-radius: 10px;
+        overflow: auto;
+        max-height: 300px;
     }
 </style>
 </head>
